@@ -13,12 +13,13 @@ const HomePageLayout = ({ children }) => {
       <CanvasScene />
       {/* <LogoGitHub /> */}
       <div
-        style={{
-          width: "95%",
-          background: "black",
-          margin: "0 auto",
-          paddingTop: "59px",
-        }}
+      className="homePageContainer"
+        // style={{
+        //   width: "95%",
+        //   background: "black",
+        //   margin: "0 auto",
+        //   paddingTop: "59px",
+        // }}
       >
         <Navbar />
         {children}

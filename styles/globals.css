@@ -38,3 +38,16 @@ body::-webkit-scrollbar {
     justify-content: center;
     margin: 0 auto;
 }
+
+.homePageContainer {
+    width: 95%;
+    background-color: black;
+    margin: 0 auto;
+    padding-top: 59px;
+}
+
+@media screen and (min-width: 1887px) {
+    .homePageContainer {
+        width: 1792px;
+    }
+}

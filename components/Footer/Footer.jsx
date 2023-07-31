@@ -9,8 +9,6 @@ const jet = localFonts({
 });
 
 export default function Footer({ isCategories }) {
-  console.log(isCategories);
-  console.log(cn(isCategories ? `${styles.Container} ${styles.footerCategories}` : styles.Container))
   return (
     <div className={cn(styles.container, isCategories && styles.footerCategories)}>
       <div className={styles.edgeContainer}>

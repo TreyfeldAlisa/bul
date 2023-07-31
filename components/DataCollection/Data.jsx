@@ -15,14 +15,14 @@ import Link from "next/link";
 
 export default function Data() {
   return (
-    <div className={styles.container} id="services" style={{ top: "50rem" }}>
+    <div className={styles.container} id="services">
       <div className={styles.imgContainer}>
         <img
           src={substract}
           alt="subtract"
           className={styles.img}
-          width={1398}
-          height={8}
+          // width={1398}
+          // height={8}
         />
 
         <video

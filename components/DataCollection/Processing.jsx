@@ -14,14 +14,14 @@ const jet = localFonts({
 
 export default function Processing() {
   return (
-    <div className={styles.container} style={{ top: "60rem" }}>
+    <div className={styles.container}>
       <div className={cn(styles.imgContainer,  styles.myImgContainer)} >
         <img
           src={substract}
           alt="subtract"
           className={styles.img}
-          width={1398}
-          height={8}
+          // width={1398}
+          // height={8}
         />
 
         <video

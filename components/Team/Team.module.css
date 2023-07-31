@@ -3,7 +3,7 @@
 
     /* width: 70rem; */
     /* left: calc(50% - 832px / 2 - 1px); */
-    top: 130rem;
+    /* top: 130rem; */
 
     display: flex;
     flex-direction: column;
@@ -22,12 +22,14 @@
     margin-top: 3vh;
     margin-left: 20.7rem;
     display: flex;
+    gap: 300px;
 }
 
 .imageBlockLeft {
     width: 30rem;
     margin-left: -3vw;
     display: flex;
+    gap: 300px;
 }
 
 .h1 {
@@ -91,7 +93,7 @@
 
 @media screen and (max-width: 900px) {
     .container {
-        margin-top: 556px;
+        margin-top: 200px;
         width: unset;
         left: unset;
         padding: unset;
@@ -108,6 +110,7 @@
         margin-top: 50px;
         gap: 40px;
         width: 100%;
+
     }
 
     .imageBlockRight {
@@ -123,11 +126,23 @@
         margin: 0 auto;
         margin-top: 50px;
         width: 100%;
+        width: 95%;
+        height: 7vh;
+
+        font-size: 16px;
     }
+
     .howContainer {
         width: unset;
         padding-top: 100px;
         padding-bottom: 373px;
     }
+
+    .imageBlockRight {
+        width: unset;
+        padding-left: unset;
+        align-items: flex-end;
+    }
+
 
 }

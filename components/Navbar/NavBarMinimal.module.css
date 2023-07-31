@@ -4,7 +4,8 @@
     flex-direction: row;
     justify-content: space-between;
     position: sticky;
-    background: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.80);
     backdrop-filter: blur(17px);
     z-index: 1000;
     padding: 10px;
@@ -28,17 +29,17 @@
 }
 
 .link {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 120%;
-    
-        display: flex;
-        letter-spacing: -0.02em;
-    
-        color: #ffffff;
-    
-        opacity: 0.4;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    display: flex;
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+
+    opacity: 0.4;
 }
 
 .button {

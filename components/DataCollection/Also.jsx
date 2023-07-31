@@ -14,15 +14,15 @@ const jet = localFonts({
 
 export default function Also() {
   return (
-    <div className={styles.container} style={{ top: "110rem" }}>
+    <div className={styles.container}>
       <div className={cn(styles.imgContainer, styles.myImgContainer)}>
         {/* <div> */}
         <img
           src={substract}
           alt="subtract"
           className={styles.img}
-          width={1398}
-          height={8}
+          // width={1398}
+          // height={8}
         />
         {/* </div> */}
         {/* <div className="ms-16 -mt-24"> */}

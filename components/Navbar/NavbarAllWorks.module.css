@@ -7,7 +7,7 @@
 
     padding-top: 0.88rem; */
 
-    /* background: rgba(0, 0, 0, 0.6); */
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(17px);
     /* Note: backdrop-filter has minimal browser support */
 

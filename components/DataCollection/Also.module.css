@@ -1,22 +1,30 @@
 .container {
-    height: 100rem;
+    /* height: 100rem;
 
     width: 70vw;
     left: calc(50% - 832px / 2 - 1px);
-    top: 80vh;
+    top: 80vh; */
 
     display: flex;
     flex-direction: column;
     position: relative;
+    align-items: center;
+    /* margin-top: 300px; */
 }
 
 .img {
-    position: absolute;
-    width: 1398px;
-    height: 8px;
-    left: -5%;
+    /* position: absolute; */
+    /* width: 1398px; */
+    height: 6px;
+    /* left: -5%; */
 
     z-index: 1;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .video {
@@ -24,7 +32,7 @@
     width: 29.375rem;
     height: 46.375rem;
     flex-shrink: 0;
-    left: 30rem;
+    /* left: 30rem; */
     top: -7rem;
 
     overflow: hidden;
@@ -41,11 +49,13 @@
 
 .contentContainer {
     position: relative;
-    width: 40vw;
-    height: 60vw;
+    /* width: 40vw; */
+    /* height: 60vw; */
     display: flex;
     flex-direction: column;
     top: -35rem;
+    width: 100%;
+    align-items: center;
 
     z-index: 2;
 }
@@ -94,18 +104,19 @@
     flex-wrap: wrap;
 
     position: relative;
+    margin: 0 auto;
 }
 
 .overflow {
     height: 22rem;
-    width: 51.125rem;
+    /* width: 51.125rem; */
     overflow: hidden;
 }
 
 .verticalOverflow {
     height: 36rem;
     width: 24.8125rem;
-    margin-right: 1.5rem;
+    /* margin-right: 1.5rem; */
     overflow: hidden;
     margin-bottom: 2rem;
 }
@@ -113,7 +124,7 @@
 .gorizontalBlock {
     position: relative;
     display: flex;
-    width: 51.125rem;
+    /* width: 51.125rem; */
     height: 20rem;
     padding-top: 3rem;
     flex-direction: column;
@@ -127,12 +138,13 @@
 .verticalBlockContainer {
     display: flex;
     flex-direction: row;
+    column-gap: 20px;
 }
 
 .verticalBlock {
     position: relative;
     display: flex;
-    width: 24.8125rem;
+    /* width: 24.8125rem; */
     height: 31.5rem;
     flex-direction: column;
     justify-content: center;
@@ -143,7 +155,7 @@
     background: #141517;
 
     margin-top: 2rem;
-    margin-right: 1.5rem;
+    /* margin-right: 1.5rem; */
 }
 
 .blockTexContainer {
@@ -278,13 +290,14 @@
     text-transform: uppercase;
 
     text-align: left;
+    overflow: hidden;
 }
 
-.also {
+/* .also {
     transform: rotate(-7.25deg);
     width: 30.77506rem;
     height: 48.53544rem;
-}
+} */
 
 /* ANIMATION */
 
@@ -320,15 +333,15 @@
     }
 
     .img {
-        width: 80%;
-        left: 10%;
+        /* width: 80%;
+        left: 10%; */
+        width: 100%;
     }
 
     .video {
         top: unset;
         left: unset;
         margin: 0 auto;
-        /* margin-top: 600px; */
     }
 
     .textContainer {
@@ -349,12 +362,14 @@
     .blockContainer {
         margin-top: 30px;
         top: unset;
+        width: 100%;
     }
 
     .gorizontalBlock {
         width: 100%;
         height: unset;
         padding-top: 3em;
+        padding-bottom: 2em;
     }
 
     .frameContainer {
@@ -364,20 +379,19 @@
 
     .verticalBlockContainer {
         flex-direction: column;
+        /* width: 100%; */
         width: 100%;
-        margin-bottom: 13px;
-        margin-top: -43px;
     }
 
     .verticalBlock {
-        width: 98%;
+        width: 100%;
         height: 20rem;
         margin-top: unset;
     }
 
     .verticalOverflow {
         height: unset;
-        /* width: unset; */
+        width: unset;
         margin-right: unset;
     }
 
@@ -385,7 +399,6 @@
         width: 100%;
         height: unset;
         gap: 10px;
-        margin-bottom: 11%;
     }
 
     .frame {
@@ -415,25 +428,18 @@
 
     .verticalOverflow {
         margin: 10px 0;
-        width: 102%;
     }
-
 
     .overflow {
         width: 100%;
         height: 299px;
-
     }
 
     .myImgContainer {
-        margin-top: 2000px;
+        margin-top: 200px;
     }
 
-    .also {
+    /* .also {
         transform: unset;
-        width: unset;
-        height: unset;
-        margin-top: 97px;
-    }
-
+    } */
 }

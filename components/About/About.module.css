@@ -1,14 +1,16 @@
 .container {
-    height: 100%;
+    /* height: 100%; */
 
-    width: 70vw;
-    left: calc(50% - 832px / 2 - 1px);
+    /* width: 70vw;
+    left: calc(50% - 832px / 2 - 1px); */
     top: 27vh;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
+    align-items: center;
 }
 
 .nav {
@@ -96,8 +98,8 @@
     display: flex;
     flex-direction: row;
     justify-content: left;
-
-    margin: 7rem 0 2rem 7rem;
+    margin: 0 auto;
+    margin-top: 60px;
 }
 
 .tooltip {
@@ -308,12 +310,12 @@
         letter-spacing: -0.8px;
     }
 
-    .gif {
-        /* margin: 70px 10px; */
+    /* .gif {
+        margin: 70px 10px;
         margin: 70px auto;
         justify-content: space-around;
         width: 100%;
-    }
+    } */
 
     .h2 {
         width: 84%;

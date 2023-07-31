@@ -172,6 +172,9 @@
 }
 
 @media screen and (max-width: 900px) {
+    .substract {
+        align-items: center;
+    }
     .h1 {
         font-size: 75px;
         width: 82%;
@@ -188,7 +191,7 @@
 
     .substractContainerBlue, .substractContainerGreen {
         transform: rotate(-14deg);
-        margin-left: 10%;
+        /* margin-left: 10%; */
         width: 260px;
     }
     .substractContainerPink {

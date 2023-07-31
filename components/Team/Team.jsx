@@ -26,11 +26,15 @@ export default function Team() {
           role="Business manager"
           image={team1}
         />
+        {/* <div> */}
         <TeamCard
           name="Konstantin Konstantinopolsky"
           role="CTO"
           image={team2}
+          isCenter={true}
+          // style={{margin: '0 auto'}}
         />
+        {/* </div> */}
       </div>
       <div className={styles.imageBlockRight}>
         <TeamCard
