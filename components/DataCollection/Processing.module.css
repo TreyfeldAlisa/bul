@@ -1,10 +1,4 @@
 .container {
-    /* height: 100rem;
-
-    width: 70vw;
-    left: calc(50% - 832px / 2 - 1px);
-    top: 80vh; */
-
     display: flex;
     flex-direction: column;
     position: relative;
@@ -12,10 +6,7 @@
 }
 
 .img {
-    /* position: absolute; */
-    /* width: 1398px; */
     height: 6px;
-    /* left: -5%; */
 
     z-index: 1;
 }
@@ -28,10 +19,10 @@
 
 .video {
     position: relative;
-    /* width: 29.375rem; */
+
     height: 46.375rem;
     flex-shrink: 0;
-    /* left: 30rem; */
+
     top: -7rem;
 
     overflow: hidden;
@@ -48,7 +39,7 @@
 
 .contentContainer {
     position: relative;
-    /* width: 40vw; */
+
     height: 60vw;
     display: flex;
     flex-direction: column;
@@ -108,14 +99,14 @@
 
 .overflow {
     height: 22rem;
-    /* width: 51.125rem; */
+
     overflow: hidden;
 }
 
 .verticalOverflow {
     height: 36rem;
     width: 24.8125rem;
-    /* margin-right: 1.5rem; */
+
     overflow: hidden;
     margin-bottom: 2rem;
 }
@@ -123,7 +114,7 @@
 .gorizontalBlock {
     position: relative;
     display: flex;
-    /* width: 51.125rem; */
+
     height: 20rem;
     padding-top: 3rem;
     flex-direction: column;
@@ -143,7 +134,7 @@
 .verticalBlock {
     position: relative;
     display: flex;
-    /* width: 24.8125rem; */
+
     height: 31.5rem;
     flex-direction: column;
     justify-content: center;
@@ -154,7 +145,6 @@
     background: #141517;
 
     margin-top: 2rem;
-    /* margin-right: 1.5rem; */
 }
 
 .blockTexContainer {
@@ -230,6 +220,10 @@
     transform: rotate(-45deg);
     font-size: 2vh;
     font-weight: bold;
+    animation: vector 2s ease-in-out;
+    -webkit-animation: vector 2s ease-in-out;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
 }
 
 .frameContainer {
@@ -247,7 +241,12 @@
 
     bottom: -1.5rem;
 
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 10s linear infinite;
+    -webkit-animation: marquee 10s linear infinite;
     animation-play-state: paused;
+    animation-fill-mode: forwards;
 }
 
 .frameVerticalContainer {
@@ -263,7 +262,12 @@
 
     bottom: -1.5rem;
 
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 10s linear infinite;
+    -webkit-animation: marquee 10s linear infinite;
     animation-play-state: paused;
+    animation-fill-mode: forwards;
 }
 
 .frame {
@@ -302,16 +306,20 @@
 
 .gorizontalBlock:hover .vector,
 .verticalBlock:hover .vector {
-    transform: rotate(45deg);
-    transition-duration: 2s;
-    transition-timing-function: ease-in-out;
+    animation: vector 2s ease-in-out;
+    -webkit-animation: vector 2s ease-in-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-play-state: running;
 }
 
 .gorizontalBlock:hover .frameContainer,
 .verticalBlock:hover .frameVerticalContainer {
-    white-space: nowrap;
-    will-change: transform;
     animation: marquee 10s linear infinite;
+    -webkit-animation: marquee 10s linear infinite;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-play-state: running;
 }
 
 @keyframes marquee {
@@ -321,6 +329,16 @@
 
     to {
         transform: translateX(-50%);
+    }
+}
+
+@keyframes vector {
+    from {
+        transform: rotate(-45deg);
+    }
+
+    to {
+        transform: rotate(45deg);
     }
 }
 
@@ -372,8 +390,29 @@
     }
 
     .frameContainer {
-        width: 100%;
         animation: unset;
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee 10s linear infinite;
+        -webkit-animation: marquee 10s linear infinite;
+        animation-play-state: paused;
+        animation-fill-mode: forwards;
+    }
+
+    .frameVerticalContainer {
+        overflow: hidden;
+        bottom: 0;
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee 10s linear infinite;
+        -webkit-animation: marquee 10s linear infinite;
+        animation-play-state: paused;
+        animation-fill-mode: forwards;
+    }
+
+    .vector {
+        animation-play-state: paused;
+        animation-fill-mode: forwards;
     }
 
     .verticalBlockContainer {
@@ -390,7 +429,6 @@
 
     .verticalOverflow {
         height: unset;
-        /* width: unset; */
         margin-right: unset;
     }
 
@@ -404,12 +442,6 @@
     .frame {
         z-index: 1000;
         width: 100%;
-    }
-
-    .frameVerticalContainer {
-        width: 100%;
-        overflow: hidden;
-        bottom: 0;
     }
 
     .roundButton {
@@ -431,16 +463,12 @@
         width: 102%;
     }
 
-
     .overflow {
         width: 100%;
         /* height: 299px; */
-
     }
 
     .myImgContainer {
         margin-top: 200px;
     }
-
 }
-
