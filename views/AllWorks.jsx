@@ -6,7 +6,7 @@ export default function AllWorks() {
     <CategoriesLayout shouldBeWithLinks={true} shape={false}>
       <div className="allworks">
         <Works />
-      </div>
+        </div>
     </CategoriesLayout>
   );
 }

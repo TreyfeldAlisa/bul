@@ -1,16 +1,4 @@
 .container {
-    /* height: 100%;
-
-    width: 70vw;
-    left: calc(50% - 832px / 2 - 1px);
-    top: 27vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-
-    gap: 0.8rem; */
     border-radius: 48px 48px 0px 0px;
     display: flex;
     flex-direction: column;
@@ -220,9 +208,6 @@
     line-height: 90%;
     letter-spacing: -0.06rem;
     margin: 100px 0;
-
-    /* margin-top: 4rem;
-    margin-left: 13rem; */
 }
 
 .button:hover {
@@ -236,6 +221,7 @@
 @media screen and (max-width: 900px) {
     .container {
         margin-top: 250px;
+        width: 100%;
     }
 
     .twoCards {
@@ -300,9 +286,6 @@
         width: 100%;
     }
 
-    /* .button {
-        width: 22.875rem;
-    } */
     .button {
         margin: 0 auto;
         margin-top: 32px;
@@ -318,5 +301,12 @@
 @media screen and (min-width: 1887px) {
     .container {
         width: 1792px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+        padding: 0 3.3%;
     }
 }

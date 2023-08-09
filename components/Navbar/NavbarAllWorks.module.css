@@ -1,18 +1,4 @@
 .nav {
-    /* position: sticky;
-    width: 100%;
-    height: 3.5rem;
-    flex-shrink: 0;
-    left: 15vw;
-
-    padding-top: 0.88rem; */
-
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(17px);
-    /* Note: backdrop-filter has minimal browser support */
-
-    /* border-radius: 57px; */
-
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -20,7 +6,8 @@
     z-index: 5;
     position: fixed;
     padding: 10px 2.5%;
-    width: 100%;
+    left: 5vw;
+    width: 90%;
     top: 0;
 }
 
@@ -44,7 +31,7 @@
     line-height: 120%;
     letter-spacing: -0.025rem;
 
-    opacity: 0.4000000059604645;
+    opacity: 0.7;
 }
 
 .button {
@@ -79,15 +66,14 @@
 }
 
 @media screen and (max-width: 1200px) {
-   .nav{
-    justify-content: space-between;
-    padding: 10px 20px;
-   }
+    .nav {
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
 }
 
-
 @media screen and (max-width: 900px) {
-   .nav{
-    display: none;
-   }
+    .nav {
+        display: none;
+    }
 }

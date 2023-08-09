@@ -19,6 +19,7 @@
 
 .wrapper {
    width: 45.35%;
+   /* width: 45.35%; */
    margin: 0 auto;
    padding-top: 48px;
    display: flex;
@@ -89,15 +90,16 @@
 
 @media (max-width: 900px) {
    .wrapper {
-      width: 95.5%;
+      width: 95%;
    }
 
    .container {
-      padding-top: 70px;
+      padding-top: 70px 0 0 0;
+      width: 100%;
    }
 
    .headerImg {
-      width: 100%;
+      width: 92%;
       height: 240px;
    }
 
@@ -126,5 +128,15 @@
 
    .wrapper {
       padding-bottom: 0;
+   }
+
+      .chipsContaner {
+         width: 342px;
+      }
+}
+
+@media screen and (min-width: 1887px) {
+   .container {
+      width: 1792px;
    }
 }

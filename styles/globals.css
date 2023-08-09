@@ -36,6 +36,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+    width: 95%;
 }
 
 .homePageContainer {
@@ -49,5 +50,11 @@ body::-webkit-scrollbar {
 @media screen and (min-width: 1887px) {
     .homePageContainer {
         width: 1792px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .allworks {
+        width: 100%;
     }
 }
