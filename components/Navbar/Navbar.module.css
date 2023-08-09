@@ -1,6 +1,11 @@
 .nav {
+    transform: scale(0);
+}
+
+.fixed {
+    transform: scale(1);
+    transition: 0.34s linear;
     position: sticky;
-    /* width: 70vw; */
     height: 8vh;
     left: 15vw;
     top: 5vh;
@@ -9,9 +14,6 @@
 
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(17px);
-    /* Note: backdrop-filter has minimal browser support */
-
-    border-radius: 57px;
 
     display: flex;
     flex-direction: row;
@@ -20,13 +22,14 @@
     padding: 0px 20px;
 
     z-index: 5;
+
+    opacity: 1;
 }
 
 .logo {
     width: 7.1875rem;
     height: 3.25rem;
     background-blend-mode: overlay, normal;
-    /* margin-left: 1vw; */
 }
 
 .linkContainer {
@@ -37,7 +40,6 @@
     justify-content: space-between;
 
     width: 35vw;
-    /* margin-left: 6vw; */
 }
 
 .link {
@@ -48,7 +50,6 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 120%;
-    /* identical to box height, or 24px */
 
     display: flex;
     letter-spacing: -0.02em;
@@ -59,17 +60,7 @@
 }
 
 .button {
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center; */
     padding: 16px 32px;
-
-    /* position: absolute;
-    width: 11vw;
-    height: 6vh;
-    left: calc(50% - 200px / 2 + 430px); */
 
     background: #cbcbcb;
     border-radius: 60px;
@@ -78,7 +69,6 @@
     font-weight: 600;
     font-size: 17px;
     line-height: 120%;
-    /* identical to box height, or 24px */
 
     letter-spacing: -0.02em;
 

@@ -13,34 +13,15 @@
 }
 
 .logo {
-    /* width: 100%; */
     height: 100%;
-    /* position: absolute;
-    left: -2vw;
-    top: -30vh; */
     z-index: 1;
-    color: #2984ff;
     margin-top: -250px;
 }
 
-/* @media screen and (max-width: 390px) {
-    .container {
+.group {
     width: 100%;
-    height: 31vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    height: 100%;
 }
-.logo {
-    width: 100%;
-    height: 31vh !important;
-    position: absolute;
-    top: 2vh;
-    padding: 0;
-    left: 0;
-}
-} */
 
 .model {
     background: linear-gradient(0deg, rgba(79, 75, 255, 0.33), rgba(79, 75, 255, 0.33)),
