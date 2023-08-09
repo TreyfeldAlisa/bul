@@ -5,7 +5,7 @@ import React from "react";
 
 const Categories = () => {
   return (
-    <CategoriesLayout shouldBeWithLinks={true}>
+    <CategoriesLayout shouldBeWithLinks={true} shape={false}>
       <CategoryCard/>
     </CategoriesLayout>
   );

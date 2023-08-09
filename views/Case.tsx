@@ -5,7 +5,7 @@ import React from "react";
 
 const Case = () => {
   return (
-    <CategoriesLayout shouldBeWithLinks={false}>
+    <CategoriesLayout shouldBeWithLinks={false} shape={false}>
       <CaseCard />
     </CategoriesLayout>
   );
