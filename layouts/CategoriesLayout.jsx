@@ -5,10 +5,10 @@ import Background from "@/components/Background/Background";
 import Footer from "@/components/Footer/Footer.jsx";
 import NavbarAllWorks from "@/components/Navbar/NavbarAllWorks";
 
-const CategoriesLayout = ({ children, shouldBeWithLinks }) => {
+const CategoriesLayout = ({ children, shouldBeWithLinks, shape }) => {
   return (
     <>
-      <Background />
+      <Background shape={shape}/>
       <NavbarAllWorks shouldBeWithLinks={shouldBeWithLinks} />
       <NavBarMinimal />
       {children}

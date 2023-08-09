@@ -13,7 +13,7 @@ const DynamicComponentWithNoSSR = dynamic(() => import("@/components/Navbar/Navb
 const HomePageLayout = ({ children }) => {
     return (
         <>
-            <Background />
+            <Background shape={true}/>
             <NavBarMinimal />
             <CanvasScene />
             <div className="homePageContainer">

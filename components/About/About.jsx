@@ -22,7 +22,7 @@ export default function About() {
                 </div>
                 <div className={cn(inter.className, styles.bul)}>blue underlined link</div>
             </div>
-            <div className={cn(inter.className, styles.h1)}>
+            <div className={cn(inter.className, styles.h1)} id="trigger">
                 helps <br /> companies
             </div>
             <div className={cn(inter.className, styles.textContainer)}>
@@ -86,7 +86,7 @@ export default function About() {
                         "overflow-hidden, -ms-6",
                     )}
                 >
-                    <img className={styles.gif4} alt="also" width={130} height={130 } src={gif4} />
+                    <img className={styles.gif4} alt="also" width={130} height={130} src={gif4} />
                 </div>
             </div>
             <div className={cn(inter.className, styles.h2)}>

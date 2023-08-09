@@ -3,7 +3,7 @@ import CategoriesLayout from "@/layouts/CategoriesLayout";
 
 export default function AllWorks() {
   return (
-    <CategoriesLayout shouldBeWithLinks={true}>
+    <CategoriesLayout shouldBeWithLinks={true} shape={false}>
       <div className="allworks">
         <Works />
       </div>
