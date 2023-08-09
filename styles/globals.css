@@ -17,7 +17,7 @@ body {
     background-color: black;
     background-size: cover;
 
-    color: #DADFE5;
+    color: #dadfe5;
     height: 100%;
     width: 100%;
 
@@ -25,7 +25,6 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-
 
 body::-webkit-scrollbar {
     width: 0;
@@ -41,6 +40,7 @@ body::-webkit-scrollbar {
 
 .homePageContainer {
     width: 95%;
+    height: 100%;
     background-color: black;
     margin: 0 auto;
     padding-top: 59px;
