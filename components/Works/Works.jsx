@@ -1,11 +1,11 @@
 import React from "react";
 import cn from "classnames";
-import Image from "next/image";
 import localFonts from "next/font/local";
 import styles from "./Works.module.css";
 
 const inter = localFonts({ src: "../../public/fonts/inter/Inter-Bold.ttf" });
 const jet = localFonts({ src: "../../public/fonts/jet-brains-mono/JetBrainsMono-Regular.ttf" });
+const interRegular = localFonts({ src: "../../public/fonts/inter/Inter-Regular.ttf" });
 
 export default function Works() {
     return (
@@ -13,7 +13,7 @@ export default function Works() {
             <div className={styles.header}>
                 <div className={cn(inter.className, styles.h1)}>All works</div>
                 <div className={cn(inter.className, styles.textContainer)}>
-                    <div className={cn(inter.className, styles.text)}>
+                    <div className={cn(interRegular.className, styles.text)}>
                         Here we have collected all our works. Use the menu to navigate through
                         categories
                     </div>

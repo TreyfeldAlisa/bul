@@ -7,6 +7,7 @@ const inter = localFonts({ src: "../../public/fonts/inter/Inter-Bold.ttf" });
 const jet = localFonts({
   src: "../../public/fonts/jet-brains-mono/JetBrainsMono-Regular.ttf",
 });
+const interRegular = localFonts({ src: "../../public/fonts/inter/Inter-Regular.ttf" });
 const chips = ["Live OCR", "Sports & esports event tracking systems"];
 
 const CaseCard = () => {
@@ -26,7 +27,7 @@ const CaseCard = () => {
               <div className={styles.frameText}>{title}</div>
             </div>
           ))}
-          <div className={cn(inter.className, styles.textContainer)}>
+          <div className={cn(interRegular.className, styles.textContainer)}>
             <div>Client's general request was the following:</div>
             <div>
               "We need a sports betting algorithm, which is able to calculate

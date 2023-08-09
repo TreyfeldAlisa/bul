@@ -31,7 +31,7 @@ const NavBarMinimal = () => {
             x2="24"
             y2="1.8"
             stroke="#DADFE5"
-            strokeWidth="2.4"
+            stroke-width="2.4"
           />
           <line
             x1="-1.04907e-07"
@@ -39,7 +39,7 @@ const NavBarMinimal = () => {
             x2="24"
             y2="9.8"
             stroke="#DADFE5"
-            strokeWidth="2.4"
+            stroke-width="2.4"
           />
           <line
             x1="-1.04907e-07"
@@ -47,7 +47,7 @@ const NavBarMinimal = () => {
             x2="24"
             y2="17.8"
             stroke="#DADFE5"
-            strokeWidth="2.4"
+            stroke-width="2.4"
           />
         </svg>
       </button>

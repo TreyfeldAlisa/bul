@@ -20,7 +20,13 @@ export default function Home() {
             <div className={cn(styles.container)}>
                 <div className={cn(styles.videoContainer)}>
                     <div className="overflow-hidden">
-                        <img className={styles.video} src={gif} alt="gif" width={72} height={72} />
+                        <img
+                            className={styles.video}
+                            src={gif}
+                            alt="gif"
+                            width={72}
+                            height={72}
+                        />
                     </div>
                     <div className={cn(jet.className, styles.text)}>
                         There is some data behind links on the web
@@ -28,7 +34,13 @@ export default function Home() {
                 </div>
                 <div className={cn(styles.videoContainer)}>
                     <div className="overflow-hidden">
-                        <img className={styles.video} src={gif} alt="gif" width={72} height={72} />
+                        <img
+                            className={styles.video}
+                            src={gif}
+                            alt="gif"
+                            width={72}
+                            height={72}
+                        />
                     </div>
 
                     <div className={cn(jet.className, styles.text)}>
@@ -39,9 +51,7 @@ export default function Home() {
                 </div>
             </div>
             <div className={styles.buttonContainer}>
-                <button className={cn(styles.button, inter.className)}>
-                    Contact us
-                </button>
+                <button className={cn(styles.button, inter.className)}>Contact us</button>
             </div>
         </div>
     );

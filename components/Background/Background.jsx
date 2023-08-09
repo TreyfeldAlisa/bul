@@ -5,7 +5,6 @@ import styles from "./Background.module.css";
 export default function Background() {
   return (
     <div className={cn(styles.container)}>
-      <div className={styles.shape} />
       <div className={styles.videoContainer}>
         <video
           controls

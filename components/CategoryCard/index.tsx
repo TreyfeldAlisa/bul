@@ -14,13 +14,14 @@ const inter = localFonts({ src: "../../public/fonts/inter/Inter-Bold.ttf" });
 const jet = localFonts({
   src: "../../public/fonts/jet-brains-mono/JetBrainsMono-Regular.ttf",
 });
+const interRegular = localFonts({ src: "../../public/fonts/inter/Inter-Regular.ttf" });
 
 const CategoryCard = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
         <h1 className={styles.h1}>Computer vision</h1>
-        <h3 className={cn(inter.className, styles.textContentTop)}>
+        <h3 className={cn(interRegular.className, styles.textContentTop)}>
           Computer vision not only takes data collection to the next level by
           opening access to new data points from non-digitized sources, but also
           greatly expands limits of content creation. Digitizing events brings

@@ -10,8 +10,11 @@
 }
 
 .container {
-    width: 60%;
+    width: 46.5%;
     gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .img {
@@ -25,11 +28,12 @@
 
 .h1,
 .h2 {
-    font-size: 6rem;
+    font-size: 128px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
     letter-spacing: -0.36rem;
+    white-space: nowrap;
 }
 
 .h1 {
@@ -40,10 +44,12 @@
     border-radius: 4px;
     background: #141517;
     display: flex;
-    padding: 16px 24px;
+    padding: 16px 0px;
+    padding-left: 24px;
     align-items: flex-start;
     gap: 10px;
-    flex: 1 0 0;
+    width: 100%;
+    /* flex: 1 0 0; */
 }
 
 .input::placeholder {
@@ -53,7 +59,7 @@
     font-weight: 700;
     line-height: 150%;
     letter-spacing: -1.44px;
-    opacity: 0.30000001192092896;
+    opacity: 0.3;
 }
 
 .input:hover {
@@ -78,12 +84,17 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 818px;
+    align-items: center;
 }
 
 .button {
     padding: 20px 48px;
     border-radius: 60px;
     background: #0067F4;
+    width: 100%;
+    margin-top: 32px;
+    font-size: 24px;
 }
 
 .formInputs {
@@ -96,6 +107,10 @@
 @media screen and (max-width: 1200px) {
     .formInputs {
         flex-direction: column;
+    }
+
+    .form {
+        width: 100%;
     }
 }
 
@@ -111,6 +126,7 @@
         font-size: 64px;
         line-height: 86%;
         letter-spacing: -3.84px;
+        white-space: unset;
     }
 
     .img {

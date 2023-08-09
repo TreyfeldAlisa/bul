@@ -1,14 +1,11 @@
 import React from "react";
 import cn from "classnames";
-import Image from "next/image";
 import localFonts from "next/font/local";
 import styles from "./LetsTalk.module.css";
 import substract from "../../public/image/Subtract.png";
 
 const inter = localFonts({ src: "../../public/fonts/inter/Inter-Bold.ttf" });
-const jet = localFonts({
-  src: "../../public/fonts/jet-brains-mono/JetBrainsMono-Regular.ttf",
-});
+const interRegular = localFonts({ src: "../../public/fonts/inter/Inter-Medium.ttf" });
 
 export default function LetsTalk() {
   return (
@@ -21,13 +18,13 @@ export default function LetsTalk() {
         </div>
         <form className={styles.form}>
           <div className={styles.formInputs}>
-            <input type="text" className={styles.input} placeholder="Name" />
-            <input type="tel" className={styles.input} placeholder="Phone" />
-            <input type="email" className={styles.input} placeholder="E-mail" />
+            <input type="text" className={cn(interRegular.className, styles.input)} placeholder="Name" />
+            <input type="tel" className={cn(interRegular.className, styles.input)} placeholder="Phone" />
+            <input type="email" className={cn(interRegular.className, styles.input)} placeholder="E-mail" />
           </div>
           <input
             type="text"
-            className={cn(styles.input, styles.inputDescription)}
+            className={cn(styles.input, styles.inputDescription, interRegular.className)}
             placeholder="Description"
           />
           <button type="submit" className={cn(inter.className, styles.button)}>

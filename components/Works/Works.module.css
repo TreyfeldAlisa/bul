@@ -11,6 +11,7 @@
     position: relative;
 
     gap: 0.8rem; */
+    border-radius: 48px 48px 0px 0px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -241,6 +242,7 @@
         flex-direction: column;
         width: 100%;
         height: unset;
+        gap: 16px;
     }
 
     .header {
@@ -251,7 +253,10 @@
 
     .h1 {
         width: 100%;
-        font-size: 79px;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 95%;
+        letter-spacing: -3.36px;
     }
 
     .text {
@@ -265,14 +270,14 @@
     }
 
     .bigCard {
-        padding: 14.125rem 2.3125rem 1.5rem 1.5rem;
+        padding: 9.8rem 1.3125rem 1.5rem 1.5rem;
         width: 100%;
         height: unset;
         margin-top: 25px;
     }
 
     .smallCard {
-        padding: 14.125rem 5.3125rem 1.5rem 1.5rem;
+        padding: 9.8rem 1.3125rem 1.5rem 1.5rem;
         width: 100%;
         height: unset;
     }
@@ -280,6 +285,7 @@
     .cardContainer {
         height: unset;
         width: 100%;
+        gap: 16px;
     }
 
     .smallCardHeader {
@@ -290,20 +296,27 @@
 
     .cardHeader {
         letter-spacing: -1px;
-        font-size: 31px;
+        font-size: 32px;
         width: 100%;
     }
 
     /* .button {
         width: 22.875rem;
     } */
-        .button {
+    .button {
         margin: 0 auto;
-        margin-top: 50px;
+        margin-top: 32px;
         width: 100%;
-        width: 95%;
         height: 7vh;
 
         font-size: 16px;
+        padding: unset;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (min-width: 1887px) {
+    .container {
+        width: 1792px;
     }
 }

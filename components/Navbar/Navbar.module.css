@@ -1,10 +1,4 @@
 .nav {
-    transform: scale(0);
-}
-
-.fixed {
-    transform: scale(1);
-    transition: 0.34s linear;
     position: sticky;
     /* width: 70vw; */
     height: 8vh;
@@ -26,8 +20,6 @@
     padding: 0px 20px;
 
     z-index: 5;
-
-    opacity: 1;
 }
 
 .logo {
@@ -108,8 +100,7 @@
 }
 
 @media (max-width: 900px) {
-    .nav,
-    .fixed {
+    .nav {
         display: none;
     }
 }
