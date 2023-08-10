@@ -129,10 +129,49 @@
    .wrapper {
       padding-bottom: 0;
    }
+}
 
-      .chipsContaner {
-         width: 342px;
-      }
+@media (max-width: 360px) {
+   .wrapper {
+      width: 95%;
+   }
+
+   .container {
+      padding-top: 70px 0 0 0;
+      width: 100%;
+   }
+
+   .headerImg {
+      width: 92%;
+      height: 240px;
+   }
+
+   .subtitle {
+      font-size: 20px;
+      line-height: 110%;
+      letter-spacing: -0.8px;
+   }
+
+   .title {
+      font-size: 56px;
+      line-height: 95%;
+      letter-spacing: -3.36px;
+   }
+
+   .frameText {
+      font-size: 12px;
+   }
+
+   .textContainer {
+      font-size: 18px;
+      padding-bottom: 0;
+      line-height: 150%;
+      letter-spacing: -1.44px;
+   }
+
+   .wrapper {
+      padding-bottom: 0;
+   }
 }
 
 @media screen and (min-width: 1887px) {
