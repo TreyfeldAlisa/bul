@@ -4,7 +4,7 @@
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
-    width: 95%;
+    width: 100%;
     margin-top: 330px;
     background-color: black;
 }
@@ -298,9 +298,15 @@
     }
 }
 
-@media screen and (min-width: 1887px) {
+@media screen and (min-width: 1890px) {
     .container {
         width: 1792px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 95%;
     }
 }
 

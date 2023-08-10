@@ -146,10 +146,26 @@
     }
 }
 
-@media screen and (min-width: 1800px) {
+/* @media screen and (min-width: 1200px) and (max-width: 1800px) {
     .container {
         width: 100%;
     }
+
+    .wrapper {
+        width: 95%;
+    }
+} */
+
+/* @media screen and (max-width: 1850px) {
+    .container {
+        width: 100%;
+    }
+    .wrapper {
+        width: 95%;
+    }
+} */
+
+@media screen and (min-width: 1890px) {
     .wrapper {
         width: 1792px;
     }
