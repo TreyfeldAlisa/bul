@@ -13,9 +13,9 @@ const Model = () => {
         <group ref={group} dispose={null} className={styles.group}>
             <primitive
                 object={nodes.Scene}
-                scale={3.2}
-                rotation={[0, 0.3, 0]}
-                position={[0.1, 0, 0]}
+                // scale={2}
+                // rotation={[0, 0.3, 0]}
+                // position={[0.1, 0, 0]}
                 materials={materials.Material}
             />
         </group>
@@ -40,13 +40,13 @@ export default function CanvasScene() {
         <div className={styles.container}>
             <Canvas
                 className={styles.logo}
-                camera={{ position: [2, 0, 12.25], fov: 16 }}
+                // camera={{ position: [2, 0, 12.25], fov: 5 }}
                 shadows
-                gl={{ preserveDrawingBuffer: true }}
-                eventPrefix="client"
+                // gl={{ preserveDrawingBuffer: true }}
+                // eventPrefix="client"
                 frameLoop="demand"
             >
-                <directionalLight intensity={0.8} position={[9, 5, 10]} />
+                <directionalLight intensity={0.7} position={[9, 5, 10]} />
                 <Suspense fallback={null}>
                     <PresentationControls
                         cursor={true}
@@ -55,6 +55,8 @@ export default function CanvasScene() {
                         config={{ mass: 2, tension: 1500 }}
                         polar={[0, 0]}
                         azimuth={[-Math.PI / 1.4, Math.PI / 2]}
+                        rotation={[0, 0.3, 0]}
+                        position={[0.1, 0, 0]}
                     >
                         <Model />
                     </PresentationControls>
