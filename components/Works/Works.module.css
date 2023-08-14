@@ -219,11 +219,6 @@
 }
 
 @media screen and (max-width: 900px) {
-    .container {
-        margin-top: 250px;
-        width: 100%;
-    }
-
     .twoCards {
         flex-direction: column;
         width: 100%;
