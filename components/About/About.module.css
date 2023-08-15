@@ -98,7 +98,7 @@
     display: flex;
     flex-direction: row;
     justify-content: left;
-    margin: 0 auto;
+    margin: 31px auto;
     margin-top: 60px;
 }
 
@@ -148,9 +148,11 @@
 
     overflow: hidden;
 
-    background: radial-gradient(50% 50% at 50% 50%,
+    background: radial-gradient(
+            50% 50% at 50% 50%,
             rgba(255, 255, 255, 0) 53.65%,
-            rgba(255, 255, 255, 0.04) 100%),
+            rgba(255, 255, 255, 0.04) 100%
+        ),
         #141517;
     border-radius: 12.5rem;
     border: 2px dashed rgba(255, 255, 255, 0.1);
