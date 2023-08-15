@@ -44,6 +44,7 @@
 @media screen and (max-width: 1200px) {
     .shape {
         width: 100%;
+        height: 2130rem;
         left: 0;
         right: 0;
     }
