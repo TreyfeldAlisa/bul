@@ -160,8 +160,14 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 40px;
+    width: 46px;
     margin-bottom: 1vh;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.36px;
+    gap: 8px;
 }
 
 .cardHeader {
@@ -246,34 +252,69 @@
     }
 
     .bigCard {
+        display: flex;
+        align-items: flex-end;
+
         padding: 9.8rem 1.3125rem 1.5rem 1.5rem;
         width: 100%;
-        height: unset;
+        height: auto;
+        aspect-ratio: 1.225;
     }
 
     .smallCard {
+        display: flex;
+        justify-content: flex-end;
+
+        padding: 9.8rem 1.3125rem 1.5rem 1.5rem;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1.225;
+    }
+
+    .cardHeader {
+        letter-spacing: -1px;
+        font-size: 56px;
+        width: 100%;
+    }
+    .smallCardHeader {
+        width: 100%;
+        letter-spacing: -1px;
+        font-size: 56px;
+    }
+
+    .one {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 38px;
+        margin-bottom: 1vh;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: -0.28px;
+        gap: 8px;
+    }
+
+    /* CARD BEFORE ASPECT_RATIO
+    .bigCard {
         padding: 9.8rem 1.3125rem 1.5rem 1.5rem;
         width: 100%;
         height: unset;
-    }
+    } */
+    /* .cardHeader {
+        letter-spacing: -1px;
+        font-size: 32px;
+        width: 100%;
+    } */
 
     .cardContainer {
         height: unset;
         width: 100%;
         gap: 16px;
         margin-top: 16px;
-    }
-
-    .smallCardHeader {
-        width: 100%;
-        letter-spacing: -1px;
-        font-size: 31px;
-    }
-
-    .cardHeader {
-        letter-spacing: -1px;
-        font-size: 32px;
-        width: 100%;
     }
 
     .button {
@@ -305,5 +346,18 @@
     .container {
         width: 100%;
         padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .cardHeader {
+        letter-spacing: -1px;
+        font-size: 32px;
+        width: 100%;
+    }
+    .smallCardHeader {
+        width: 100%;
+        letter-spacing: -1px;
+        font-size: 32px;
     }
 }
