@@ -26,7 +26,6 @@ export default function Navbar() {
                     .on("enter", function (e) {
                         console.log("enter");
                         setClassList(styles.fixed);
-                        console.log("ClassList changed");
                     })
                     .on("leave", function (e) {
                         console.log("leave");

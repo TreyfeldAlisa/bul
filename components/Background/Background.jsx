@@ -3,7 +3,6 @@ import cn from "classnames";
 import styles from "./Background.module.css";
 
 export default function Background(shape) {
-    console.log(shape);
     return (
         <div className={cn(styles.container)}>
             {shape.shape ? <div className={styles.shape} /> : null}

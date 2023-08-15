@@ -7,7 +7,7 @@ import dynamic from "next/dynamic";
 
 const DynamicComponentWithNoSSR = dynamic(() => import("@/components/Navbar/Navbar"), {
     ssr: false,
-    loading: () => <p>loading..{console.log("loading")}</p>,
+    loading: () => {console.log("loading")},
 });
 
 const HomePageLayout = ({ children }) => {
