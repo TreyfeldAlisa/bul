@@ -54,7 +54,7 @@
 
     align-items: flex-start;
     gap: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .background {
@@ -96,7 +96,7 @@
     background-size: cover;
 }
 
-.card1 {
+/* .card1 {
     background-image: linear-gradient(0deg, rgb(89, 3, 3, 0.7), rgb(89, 3, 3, 0.7)),
         url(/image/bigCardbackground.gif);
 }
@@ -109,6 +109,16 @@
 .card3 {
     background-image: linear-gradient(0deg, rgb(82, 3, 89, 0.7), rgb(82, 3, 89, 0.7)),
         url(/image/bigCardbackground.gif);
+} */
+
+.card1 {
+    background-image: url(/image/Frame1.png);
+}
+.card2 {
+    background-image: url(/image/Frame2.png);
+}
+.card3 {
+    background-image: url(/image/Frame3.png);
 }
 
 .card4 {
