@@ -1,6 +1,7 @@
 .container {
    display: flex;
    flex-direction: column;
+   align-items: center;
    width: 95%;
    margin: 0 auto;
    margin-top: 400px;
@@ -9,15 +10,20 @@
 }
 
 .header {
-   width: 45.7%;
-   margin: 0 auto;
-   padding-top: 64px;
-   display: flex;
-   flex-direction: column;
-   gap: 48px;
+   width: 51.125rem;
+      height: 30rem;
+      flex-shrink: 0;
+   
+      margin-bottom: 6.5rem;
+      margin-top: 125px;
 }
 
 .h1 {
+   display: flex;
+   width: 51.125rem;
+   flex-direction: column;
+   flex-shrink: 0;
+   color: #dadfe5;
    font-size: 6rem;
    font-style: normal;
    font-weight: 700;
@@ -34,6 +40,8 @@
    font-weight: 500;
    line-height: 150%;
    letter-spacing: -1.44px;
+
+   margin-top: 48px;
 }
 
 .textContentBottom {
@@ -53,29 +61,38 @@
    flex-direction: row;
    flex-wrap: wrap;
    gap: 8px;
+
+   margin: 24px 0 130px 0;
 }
 
 .bigCard {
    display: flex;
    position: relative;
-   padding: 170px 410px 24px 24px;
+   padding: 10.625rem 25.625rem 1.5rem 1.5rem;
    align-items: center;
+   border-radius: 0.25rem;
+}
+
+.twoCards {
+   display: flex;
+   justify-content: space-between;
+   gap: 1.5rem;
+
+   height: 31.5rem;
+   width: 51.125rem;
+}
+
+.smallCard {
+   display: flex;
+   height: 100%;
+   width: 25rem;
+
+   padding: 19.125rem 4.3125rem 1.5rem 1.5rem;
+   flex-direction: column;
+
    border-radius: 0.25rem;
    background-repeat: no-repeat;
    background-size: cover;
-   background-image: linear-gradient(0deg, rgb(89, 3, 3, 0.7), rgb(89, 3, 3, 0.7)), url('/image/bigCardbackground.gif');
-}
-
-.point {
-   width: 14px;
-   height: 14px;
-   left: 553px;
-   top: 284px;
-
-   background: white;
-   border-radius: 17px;
-
-   margin-top: 3px;
 }
 
 .cardHeader {
@@ -88,24 +105,24 @@
 }
 
 .cardContainer {
-   width: 100%;
+   height: 86rem;
+   width: 51.125rem;
+   display: inline-flex;
+   flex-direction: column;
+
+   align-items: flex-start;
+   gap: 1.5rem;
 }
 
-.card2 {
-   background-image: linear-gradient(0deg, rgb(31, 3, 89, 0.7), rgb(31, 3, 89, 0.7)),
-      url('/image/bigCardbackground.gif');
-}
-
-.card3 {
-   background-image: linear-gradient(0deg, rgb(82, 3, 89, 0.7), rgb(82, 3, 89, 0.7)),
-      url('/image/bigCardbackground.gif');
-}
-
-.twoCards {
+/* .bigCard {
    display: flex;
-   flex-direction: row;
-   margin-top: 8px;
-   gap: 8px;
+   position: relative;
+   padding: 170px 410px 24px 24px;
+   align-items: center;
+   border-radius: 0.25rem;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: linear-gradient(0deg, rgb(89, 3, 3, 0.7), rgb(89, 3, 3, 0.7)), url('/image/bigCardbackground.gif');
 }
 
 .smallCard {
@@ -115,6 +132,56 @@
    flex-direction: column;
    justify-content: flex-end;
    align-items: center;
+}
+
+.twoCards {
+   display: flex;
+   flex-direction: row;
+   margin-top: 8px;
+   gap: 8px;
+} */
+
+.point {
+   width: 1rem;
+      height: 1rem;
+      border-radius: 1rem;
+   left: 553px;
+   top: 284px;
+
+   background: #dadfe5;
+
+   margin-top: 3px;
+}
+
+.one {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+
+   width: 46px;
+   margin-bottom: 1vh;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 120%;
+   letter-spacing: -0.36px;
+   gap: 8px;
+}
+
+.card1 {
+   background-image: linear-gradient(0deg, rgb(89, 3, 3, 0.7), rgb(89, 3, 3, 0.7)),
+      url(/image/bigCardbackground.gif);
+}
+
+.card2 {
+   background-image: linear-gradient(0deg, rgb(31, 3, 89, 0.7), rgb(31, 3, 89, 0.7)),
+      url(/image/bigCardbackground.gif);
+}
+
+.card3 {
+   background-image: linear-gradient(0deg, rgb(82, 3, 89, 0.7), rgb(82, 3, 89, 0.7)),
+      url(/image/bigCardbackground.gif);
 }
 
 .smallCardHeader {
@@ -147,55 +214,91 @@
    margin: 100px auto;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
    .twoCards {
       flex-direction: column;
-   }
-
-   .smallCard {
       width: 100%;
-      padding: 14.125rem 5.3125rem 1.5rem 1.5rem;
+      height: unset;
+      gap: 16px;
    }
 
    .header {
-      width: 60%;
-   }
-}
-
-@media screen and (max-width: 900px) {
-   .header {
-      width: 95%;
+      width: 100%;
+      margin-left: 10px;
+      margin-bottom: 80px;
    }
 
    .h1 {
+      width: 100%;
       font-size: 56px;
+      font-weight: 700;
       line-height: 95%;
       letter-spacing: -3.36px;
    }
 
-   .textContentTop,
-   .textContentBottom {
-      font-size: 18px;
-   }
-
-   .frame {
-      padding: 12px 20px;
-      font-size: 14px;
+   .text {
+      width: 90%;
+      font-size: 19px;
    }
 
    .bigCard {
+      display: flex;
+      align-items: flex-end;
+
       padding: 9.8rem 1.3125rem 1.5rem 1.5rem;
       width: 100%;
-      margin-top: 25px;
+      height: auto;
+      aspect-ratio: 1.225;
    }
 
    .smallCard {
+      display: flex;
+      justify-content: flex-end;
+
       padding: 9.8rem 1.3125rem 1.5rem 1.5rem;
-      align-items: flex-start;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1.225;
    }
 
-   .container {
-      margin-top: 304px;
+   .cardHeader {
+      letter-spacing: -1px;
+      font-size: 56px;
+      width: 100%;
+   }
+
+   .smallCardHeader {
+      width: 100%;
+      letter-spacing: -1px;
+      font-size: 56px;
+   }
+
+   .one {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      width: 60px;
+      margin-bottom: 1vh;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+      letter-spacing: -0.28px;
+      gap: 3px;
+   }
+
+   .point {
+      width: 1.5rem;
+      height: 1.5rem;
+   }
+
+   .cardContainer {
+      height: unset;
+      width: 100%;
+      gap: 16px;
+      margin-top: 15rem;
    }
 
    .button {
@@ -207,28 +310,40 @@
       font-size: 16px;
       padding: unset;
       padding-left: 20px;
-  }
-
-   .smallCardHeader, .cardHeader {
-      font-size: 32px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 100%;
-      /* 32px */
-      letter-spacing: -1.92px;
    }
 }
 
-@media screen and (min-width: 1887px) {
+@media screen and (min-width: 1890px) {
    .container {
       width: 1792px;
+   }
+}
+
+@media screen and (max-width: 1200px) {
+   .container {
+      width: 95%;
+      padding: 0 8%;
    }
 }
 
 @media screen and (max-width: 900px) {
    .container {
       width: 100%;
-      padding: 0 6%;
+      padding: 0 16px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+   .cardHeader {
+      letter-spacing: -1px;
+      font-size: 32px;
+      width: 100%;
+   }
+
+   .smallCardHeader {
+      width: 100%;
+      letter-spacing: -1px;
+      font-size: 32px;
    }
 }
 

@@ -24,11 +24,11 @@ export default function Works() {
                 <div className={cn(styles.bigCard, styles.card1)}>
                     <div className={styles.background}>
                         <div className={cn(jet.className, styles.one)}>
-                            {/* <div className={styles.point}></div> */}
-                            {/* <div>01</div> */}
+                            <div className={styles.point}></div>
+                            <div>01</div>
                         </div>
-                        <div className={cn(inter.className, styles.cardHeader, "mb-24")}>
-                            {/* CS:GO Sports Betting Algorithm */}
+                        <div className={cn(inter.className, styles.cardHeader)}>
+                            CS:GO Sports Betting Algorithm
                         </div>
                     </div>
                 </div>
@@ -37,11 +37,11 @@ export default function Works() {
                     <div className={cn(styles.smallCard, styles.card2)}>
                         <div className={styles.background}>
                             <div className={cn(jet.className, styles.one)}>
-                                {/* <div className={styles.point}></div> */}
-                                {/* <div>02</div> */}
+                                <div className={styles.point}></div>
+                                <div>02</div>
                             </div>
                             <div className={cn(inter.className, styles.smallCardHeader)}>
-                                {/* CS:GO Sports Betting Algorithm */}
+                                CS:GO Sports Betting Algorithm
                             </div>
                         </div>
                     </div>
@@ -49,11 +49,11 @@ export default function Works() {
                     <div className={cn(styles.smallCard, styles.card3)}>
                         <div className={styles.background}>
                             <div className={cn(jet.className, styles.one)}>
-                                {/* <div className={styles.point}></div> */}
-                                {/* <div>03</div> */}
+                                <div className={styles.point}></div>
+                                <div>03</div>
                             </div>
                             <div className={cn(inter.className, styles.smallCardHeader)}>
-                                {/* CS:GO Sports Betting Algorithm */}
+                                CS:GO Sports Betting Algorithm
                             </div>
                         </div>
                     </div>
@@ -115,11 +115,11 @@ export default function Works() {
                     <div className={cn(styles.smallCard, styles.card3)}>
                         <div className={styles.background}>
                             <div className={cn(jet.className, styles.one)}>
-                                {/* <div className={styles.point}></div>
-                                <div>08</div> */}
+                                <div className={styles.point}></div>
+                                <div>08</div>
                             </div>
                             <div className={cn(inter.className, styles.smallCardHeader)}>
-                                {/* CS:GO Sports Betting Algorithm */}
+                                CS:GO Sports Betting Algorithm
                             </div>
                         </div>
                     </div>
