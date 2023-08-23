@@ -215,10 +215,6 @@
     transform: rotate(-45deg);
     font-size: 2vh;
     font-weight: bold;
-    animation: vector 2s ease-in-out;
-    -webkit-animation: vector 2s ease-in-out;
-    animation-play-state: paused;
-    animation-fill-mode: forwards;
 }
 
 .frameContainer {
@@ -238,8 +234,8 @@
 
     white-space: nowrap;
     will-change: transform;
-    animation: marquee 10s linear infinite;
-    -webkit-animation: marquee 10s linear infinite;
+    animation: marquee 20s linear infinite;
+    -webkit-animation: marquee 20s linear infinite;
     animation-play-state: paused;
     animation-fill-mode: forwards;
 }
@@ -301,20 +297,36 @@
 
 .gorizontalBlock:hover .vector,
 .verticalBlock:hover .vector {
-    animation: vector 2s ease-in-out;
+    animation: vector 3s ease-in-out;
     -webkit-animation: vector 2s ease-in-out;
+}
+
+.gorizontalBlock:hover,
+.verticalBlock:hover {
+    background-color: #202024;
+}
+
+.gorizontalBlock:active,
+.verticalBlock:active {
+    background-color: #141517;
+}
+
+.gorizontalBlock:hover .frameContainer {
+    animation: marquee 20s linear infinite;
+    -webkit-animation: marquee 20s linear infinite;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     animation-play-state: running;
+    cursor: pointer;
 }
 
-.gorizontalBlock:hover .frameContainer,
 .verticalBlock:hover .frameVerticalContainer {
     animation: marquee 10s linear infinite;
     -webkit-animation: marquee 10s linear infinite;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
     animation-play-state: running;
+    cursor: pointer;
 }
 
 @keyframes marquee {
@@ -333,7 +345,7 @@
     }
 
     to {
-        transform: rotate(45deg);
+        transform: rotate(0deg);
     }
 }
 
@@ -387,8 +399,8 @@
         animation: unset;
         white-space: nowrap;
         will-change: transform;
-        animation: marquee 10s linear infinite;
-        -webkit-animation: marquee 10s linear infinite;
+        animation: marquee 20s linear infinite;
+        -webkit-animation: marquee 20s linear infinite;
         animation-play-state: paused;
         animation-fill-mode: forwards;
     }
@@ -400,11 +412,6 @@
         will-change: transform;
         animation: marquee 10s linear infinite;
         -webkit-animation: marquee 10s linear infinite;
-        animation-play-state: paused;
-        animation-fill-mode: forwards;
-    }
-
-    .vector {
         animation-play-state: paused;
         animation-fill-mode: forwards;
     }
