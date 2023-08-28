@@ -27,15 +27,32 @@ export default function Navbar() {
                         console.log("enter");
                         setClassList(styles.fixed);
                     })
-                    .on("leave", function (e) {
-                        console.log("leave");
-                        setClassList(styles.nav);
-                    })
                     .addTo(controller);
             }
         };
         load();
     });
+
+        useEffect(() => {
+            const load = async () => {
+                if (typeof window !== undefined) {
+                    const ScrollMagic = (await import("scrollmagic")).default;
+                    const controller = new ScrollMagic.Controller();
+
+                    new ScrollMagic.Scene({
+                        triggerElement: "#trigger",
+                        triggerHook: 2,
+                        reverse: true,
+                    })
+                        .on("leave", function (e) {
+                            console.log("leave");
+                            setClassList(styles.nav);
+                        })
+                        .addTo(controller);
+                }
+            };
+            load();
+        });
 
     return (
         <div className={cn(classList)} id="navbar">
@@ -44,7 +61,7 @@ export default function Navbar() {
             </Link>
             <div className={styles.linkContainer}>
                 {links.map(({ href, name }) => (
-                    <Link href={href} className={styles.link} onClick={() => setOpen(false)}>
+                    <Link href={href} key={href} className={styles.link} onClick={() => setOpen(false)}>
                         {name}
                     </Link>
                 ))}

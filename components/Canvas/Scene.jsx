@@ -44,7 +44,7 @@ export default function CanvasScene() {
                 shadows
                 // gl={{ preserveDrawingBuffer: true }}
                 // eventPrefix="client"
-                frameLoop="demand"
+                frameloop="demand"
             >
                 <directionalLight intensity={0.7} position={[9, 5, 10]} />
                 <Suspense fallback={null}>
