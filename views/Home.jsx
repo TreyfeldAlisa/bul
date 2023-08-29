@@ -8,14 +8,14 @@ import Team from "@/components/Team/Team";
 import HomePageLayout from "@/layouts/HomePageLayout";
 
 export default function Main() {
-  return (
-    <HomePageLayout>
-       <About />
-        <Data />
-        <Processing />
-        <Storing />
-        <Also />
-        <Team />
-    </HomePageLayout>
-  );
+    return (
+        <HomePageLayout>
+            <About />
+            <Data />
+            <Processing />
+            <Storing />
+            <Also />
+            <Team />
+        </HomePageLayout>
+    );
 }

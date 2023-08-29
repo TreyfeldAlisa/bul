@@ -26,8 +26,8 @@ export default function HowWeCan() {
             setValue(returnedValue);
 
             if (value.includes(".")) {
-                value.substring(3, value.length)
-                setValue(value)
+                value.substring(3, value.length);
+                setValue(value);
             }
         }
         return "";

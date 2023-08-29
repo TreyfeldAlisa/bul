@@ -97,7 +97,6 @@
 
 .overflow {
     height: 22rem;
-    /* width: 51.125rem; */
     overflow: hidden;
 }
 
@@ -147,6 +146,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .point {
@@ -164,7 +164,6 @@
     align-items: center;
 
     width: 40px;
-    margin-bottom: 1vh;
 }
 
 .figure {
@@ -195,8 +194,6 @@
     width: 52px;
     height: 52px;
 
-    margin-top: 4vh;
-
     background: #dadfe5;
     border-radius: 60px;
 
@@ -207,13 +204,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 }
 
 .vector {
     position: absolute;
     color: black;
     transform: rotate(-45deg);
-    font-size: 2vh;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 

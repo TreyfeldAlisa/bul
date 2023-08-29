@@ -3,7 +3,6 @@ import cn from "classnames";
 import localFonts from "next/font/local";
 import styles from "./About.module.css";
 
-// import Image from "next/image";
 import gif1 from "../../public/image/image16542.png";
 import gif2 from "../../public/image/image16541.png";
 import gif3 from "../../public/image/image1654.png";

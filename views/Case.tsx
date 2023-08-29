@@ -4,11 +4,11 @@ import CategoriesLayout from "@/layouts/CategoriesLayout";
 import React from "react";
 
 const Case = () => {
-  return (
-    <CategoriesLayout shouldBeWithLinks={false} shape={false}>
-      <CaseCard />
-    </CategoriesLayout>
-  );
+    return (
+        <CategoriesLayout shouldBeWithLinks={false} shape={false}>
+            <CaseCard />
+        </CategoriesLayout>
+    );
 };
 
 export default Case;
