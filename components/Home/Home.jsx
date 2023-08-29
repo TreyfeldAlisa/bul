@@ -2,7 +2,6 @@ import React from "react";
 import cn from "classnames";
 import localFonts from "next/font/local";
 import styles from "./Home.module.css";
-// import img from "next/img";
 
 import gif from "../../public/image/ezgif.com-gif-maker.gif";
 

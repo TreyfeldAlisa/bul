@@ -1,10 +1,4 @@
 .container {
-    /* height: 100%;
-
-    width: 60rem;
-    left: calc(50% - 832px / 2 - 1px);
-    top: 150rem; */
-
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -43,7 +37,7 @@
 }
 
 .text {
-    color: #DADFE5;
+    color: #dadfe5;
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
@@ -64,6 +58,24 @@
     align-items: center;
     justify-content: center;
     margin-top: -1vw;
+}
+
+/* ANIMATION */
+.substractContainer:hover {
+    animation: rotate 3s ease-in-out forwards;
+    -webkit-animation: rotate 3s ease-in-out forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-15deg);
+    }
 }
 
 .substractContainerBlue {
@@ -87,7 +99,6 @@
     z-index: 0;
     width: 23rem;
     height: 23rem;
-    /* object-fit: none; */
 }
 
 .substractText {
@@ -106,11 +117,11 @@
 }
 
 .green {
-    color: #24F946;
+    color: #24f946;
 }
 
 .pink {
-    color: #FF3998;
+    color: #ff3998;
 }
 
 @media screen and (max-width: 1600px) {
@@ -118,7 +129,6 @@
         z-index: 0;
         width: 15rem;
         height: 15rem;
-        /* object-fit: none; */
     }
 
     .substractText {
@@ -189,7 +199,8 @@
         width: unset;
     }
 
-    .substractContainerBlue, .substractContainerGreen {
+    .substractContainerBlue,
+    .substractContainerGreen {
         transform: rotate(-14deg);
         /* margin-left: 10%; */
         width: 260px;
