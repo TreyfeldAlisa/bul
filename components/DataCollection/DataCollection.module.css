@@ -296,8 +296,8 @@
 
 .gorizontalBlock:hover .vector,
 .verticalBlock:hover .vector {
-    animation: vector 3s ease-in-out;
-    -webkit-animation: vector 2s ease-in-out;
+    animation: vector 3s ease-in-out forwards;
+    -webkit-animation: vector 3s ease-in-out forwards;
 }
 
 .gorizontalBlock:hover,
