@@ -1,14 +1,3 @@
-/* .mainPage {
-    width: 70vw;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    left: calc(50% - 832px / 2 - 1px);
-    bottom: 22vh;
-    margin-left: -1vw;
-    z-index: 10;
-} */
-
 .textContainer {
     z-index: 10;
 }
@@ -18,7 +7,6 @@
     flex-direction: column;
     gap: 80px;
     margin-top: -90px;
-    margin-left: 2.5rem;
 }
 
 .textTitle {
@@ -52,7 +40,6 @@
     position: relative;
     margin-left: 4vh;
     top: 2rem;
-
 }
 
 .videoContainer {
@@ -116,16 +103,17 @@
     .mainPage {
         display: flex;
         flex-direction: column;
-
-        width: 100%;
         align-content: center;
-        left: 0;
-        margin-left: 0;
-        top: 70vh;
+
+        height: 21,4rem;
+        width: 100%;
+
+        padding: 0 1rem 0 1.06rem;
     }
 
     .textContainer {
-        top: -20vh;
+        height: 10.3125rem;
+        margin-bottom: -5rem;
     }
 
     .textTitle {
@@ -136,21 +124,21 @@
     }
 
     .text {
-        flex-wrap: nowrap;
-        width: 80%;
-
-        font-size: 14px;
-
-        padding-top: 3vh;
-
-        margin-left: 2px;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: -0.0175rem;
+        text-transform: uppercase;
+        width: 9rem;
+        margin: 0;
     }
 
     .buttonContainer {
         display: flex;
         justify-content: center;
-
-        margin-top: -10px;
+        height: 4rem;
+        margin-top: -1rem;
     }
 
     .button {
@@ -164,17 +152,23 @@
         display: flex;
         width: 100%;
         flex-direction: row;
-        justify-content: space-around;
+        margin: 0;
     }
 
     .videoContainer {
-        display: flex;
+        display: inline-flex;
         flex-direction: column;
-        flex-wrap: wrap;
-
-        width: 100%;
-        padding-left: 10px;
+        justify-content: center;
         align-items: flex-start;
-        margin: 0 auto;
+        width: 9rem;
+        height: 3.35rem;
+        gap: -1.5rem;
+        margin-right: 2.25rem;
+    }
+    .video {
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 3.75rem;
+        opacity: 0.4;
     }
 }

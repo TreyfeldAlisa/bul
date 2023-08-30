@@ -88,9 +88,50 @@ export default function About() {
                     <img className={styles.gif4} alt="also" width={130} height={130} src={gif4} />
                 </div>
             </div>
+
             <div className={cn(inter.className, styles.h2)}>
                 Primarily our work lies in domains of digital marketing, trading, betting and
                 esports.
+            </div>
+
+            <div className={styles.buttonContainer}>
+                <button className={cn(styles.button, inter.className)}>
+                    View all our works
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="21"
+                        height="20"
+                        viewBox="0 0 21 20"
+                        fill="none"
+                    >
+                        <g clip-path="url(#clip0_151_2397)">
+                            <path
+                                d="M3.62695 10.0005L17.377 10.0005"
+                                stroke="white"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M11.7505 4.37402L17.3755 9.99902L11.7505 15.624"
+                                stroke="white"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_151_2397">
+                                <rect
+                                    width="20"
+                                    height="20"
+                                    fill="white"
+                                    transform="translate(0.5)"
+                                />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
             </div>
         </div>
     );

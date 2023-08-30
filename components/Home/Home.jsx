@@ -11,7 +11,7 @@ const jet = localFonts({ src: "../../public/fonts/jet-brains-mono/JetBrainsMono-
 export default function Home() {
     return (
         <div className={cn(styles.mainPage)} id="home">
-            <div className={cn(styles.textContainer, "-my-32")}>
+            <div className={cn(styles.textContainer)}>
                 <p className={cn(inter.className, styles.textTitle)}>
                     blue <br /> underlined link
                 </p>

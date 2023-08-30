@@ -3,7 +3,7 @@
     flex-direction: column;
     position: relative;
     align-items: center;
-    margin-top: 600px;
+    margin-top: 14rem;
 }
 
 .img {
@@ -357,11 +357,12 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 340px) and (max-width: 900px) {
     .container {
         left: 0;
         width: 100%;
         position: unset;
+        margin-top: 12rem;
     }
 
     .img {
@@ -479,6 +480,12 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .contentContainer {
+        top: -29rem;
+    }
+}
+
+@media screen and (max-width: 340px) {
     .contentContainer {
         top: -29rem;
     }

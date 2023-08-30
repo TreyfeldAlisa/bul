@@ -95,7 +95,7 @@
     flex-direction: row;
     justify-content: left;
     margin: 31px auto;
-    margin-top: 60px;
+    margin-top: 8.62rem;
 }
 
 .tooltip {
@@ -232,6 +232,7 @@
     font-weight: 700;
     line-height: 100%;
     letter-spacing: -0.18rem;
+    margin-bottom: 5rem;
 }
 
 .button {
@@ -244,8 +245,6 @@
     gap: 1rem;
     flex-shrink: 0;
 
-    position: absolute;
-    left: calc(50% - 35rem / 2 - 1rem);
     top: 65rem;
 
     background: #141517;
@@ -258,6 +257,8 @@
     font-weight: 700;
     line-height: 90%;
     letter-spacing: -0.06rem;
+
+    margin-bottom: 11.62rem;
 }
 
 .button:hover {
@@ -268,7 +269,7 @@
     background: #141517;
 }
 
-@media screen and (max-width: 370px) {
+/* @media screen and (max-width: 370px) {
     .container {
         left: 0;
         width: 100%;
@@ -326,63 +327,116 @@
         width: 6.9em;
         height: 6.9em;
     }
-}
+} */
 
 @media screen and (max-width: 900px) {
     .container {
         left: 0;
         width: 100%;
-        margin-bottom: 400px;
+        height: 65.5rem;
+        top: 11.25rem;
     }
 
     .nav {
         width: 100%;
-        gap: 15px;
+        gap: 1rem;
         align-items: center;
     }
 
     .bul {
         white-space: nowrap;
-        margin-left: 0;
-        font-size: 20px;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: -0.05rem;
         padding-top: 10px;
+        margin: 0;
     }
 
     .h1 {
-        font-size: 4em;
-        width: 100%;
-        letter-spacing: 0;
+        color: #dadfe5;
+        font-size: 3.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 86%;
+        letter-spacing: -0.24rem;
+        width: 21.375rem;
+        padding-left: 1rem;
     }
 
     .text {
         flex-shrink: unset;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: -0.05rem;
     }
 
     .textContainer {
-        margin-left: 19%;
+        margin-left: 30%;
         font-size: 20px;
         font-style: normal;
         font-weight: 700;
         line-height: 110%;
-        width: 300px;
+        width: 15.3125rem;
         letter-spacing: -0.8px;
     }
 
     .gif {
-        margin: 70px 10px;
-        margin: 70px auto;
+        display: inline-flex;
+        align-items: flex-start;
+        gap: -1.5rem;
+        display: flex;
+        width: 5.5rem;
+        height: 5.5rem;
+        padding: 0.39006rem 0.30544rem 0.27306rem 0.30569rem;
         justify-content: center;
-        width: 100%;
+        align-items: center;
     }
 
     .h2 {
-        width: 84%;
-        font-size: 40px;
-        margin: 0 auto;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -0.12rem;
+        width: 20.5rem;
+
+        margin-bottom: 4.5rem;
     }
 
     .frame {
-        width: 6.9em;
-        height: 6.9em;
+        width: 4.88888rem;
+        height: 4.83688rem;
+        flex-shrink: 0;
+    }
+
+    .button {
+        display: flex;
+        width: 20rem;
+        height: 3.875rem;
+        padding: 1.5rem 3rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.75rem;
+        flex-shrink: 0;
+        border-radius: 3.75rem;
+        background: #141517;
+
+        color: #fff;
+        text-align: center;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 90%;
+
+        letter-spacing: -0.04rem;
+    }
+
+    .buttonContainer {
+        height: 3.875rem;
+        display: flex;
     }
 }
