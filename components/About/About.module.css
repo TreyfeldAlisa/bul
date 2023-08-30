@@ -312,12 +312,12 @@
         letter-spacing: -0.8px;
     }
 
-    /* .gif {
+    .gif {
         margin: 70px 10px;
         margin: 70px auto;
-        justify-content: space-around;
+       justify-content: center;
         width: 100%;
-    } */
+    }
 
     .h2 {
         width: 84%;

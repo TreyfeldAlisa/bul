@@ -15,9 +15,9 @@ export default function Processing() {
         <div className={styles.container}>
             <div className={cn(styles.imgContainer, styles.myImgContainer)}>
                 <img src={substract} alt="subtract" className={styles.img} />
-
+                <div className={styles.gradient}> </div>{" "}
                 <video
-                    controls
+                    controls2
                     autoPlay
                     playsInline
                     loop

@@ -9,7 +9,7 @@
 .img {
     height: 6px;
 
-    z-index: 1;
+    z-index: 2;
 }
 
 .imgContainer {
@@ -18,19 +18,28 @@
     align-items: flex-end;
 }
 
+.gradient {
+    position: absolute;
+    height: 46.375rem;
+    width: 39rem;
+    flex-shrink: 0;
+    top: -3rem;
+    background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0) 16%),
+        linear-gradient(90deg, rgba(0, 0, 0, 0) 92%, black 100%);
+    z-index: 1;
+}
+
 .video {
     position: relative;
-    width: 29.375rem;
     height: 46.375rem;
     flex-shrink: 0;
-    top: -7rem;
+    top: -3rem;
+    z-index: 0;
 
     overflow: hidden;
 
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 91.67%, #000000 100%),
-        linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 16.33%);
-
-    z-index: 0;
+    filter: brightness(200%);
+    opacity: 0.9;
 }
 
 .video::-webkit-media-controls {
@@ -70,6 +79,7 @@
     font-weight: 700;
     line-height: 76%;
     letter-spacing: -0.48rem;
+    z-index: 2;
 }
 
 .h2 {
@@ -357,10 +367,15 @@
         width: 100%;
     }
 
+    .gradient {
+        display: none;
+    }
+
     .video {
         top: unset;
         left: unset;
-        margin: 0 auto;
+        margin: 36px auto;
+        height: 100%;
     }
 
     .textContainer {
@@ -376,6 +391,7 @@
     .contentContainer {
         position: unset;
         width: 100%;
+        gap: 27px;
     }
 
     .blockContainer {
@@ -423,12 +439,6 @@
         margin-top: unset;
     }
 
-    .verticalOverflow {
-        height: unset;
-        width: unset;
-        margin-right: unset;
-    }
-
     .blockTexContainer {
         width: 100%;
         height: unset;
@@ -455,7 +465,10 @@
     }
 
     .verticalOverflow {
-        margin: 10px 0;
+        height: unset;
+        width: unset;
+        margin-right: unset;
+        /* margin: 10px 0; */
     }
 
     .overflow {

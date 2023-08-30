@@ -16,7 +16,7 @@ export default function Data() {
         <div className={styles.container} id="services">
             <div className={styles.imgContainer}>
                 <img src={substract} alt="subtract" className={styles.img} />
-
+                <div className={styles.gradient}> </div>{" "}
                 <video
                     controls
                     autoPlay

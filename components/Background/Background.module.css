@@ -44,7 +44,7 @@
 @media screen and (max-width: 1200px) {
     .shape {
         width: 100%;
-        height: 2130rem;
+        /* height: 2130rem; */
         left: 0;
         right: 0;
     }
@@ -55,3 +55,9 @@
         width: 1792px;
     }
 }
+
+/* @media screen and (min-width: 500px) and (max-width: 900px) {
+    .shape {
+            width: 1792px;
+        }
+} */
