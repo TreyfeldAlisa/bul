@@ -3,6 +3,8 @@
     flex-direction: column;
     position: relative;
     align-items: center;
+    overflow-x: hidden;
+    padding-top: 50px;
 }
 
 .img {
@@ -66,8 +68,9 @@
     flex-direction: column;
     position: absolute;
 
-    top: 8vh;
+    top: 9rem;
     height: auto;
+        margin-right: 7%;
 
     color: #dadfe5;
 }
@@ -482,4 +485,10 @@
     .myImgContainer {
         margin-top: 200px;
     }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+        .gradient {
+                display: none;
+            }
 }

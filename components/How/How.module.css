@@ -61,9 +61,17 @@
 }
 
 /* ANIMATION */
-.substractContainer:hover {
+.substractContainerBlue:hover,
+.substractContainerPink:hover {
     animation: rotate 3s ease-in-out forwards;
     -webkit-animation: rotate 3s ease-in-out forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.substractContainerGreen:hover {
+    animation: rotateGreen 3s ease-in-out forwards;
+    -webkit-animation: rotateGreen 3s ease-in-out forwards;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
 }
@@ -78,21 +86,31 @@
     }
 }
 
+@keyframes rotateGreen {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(15deg);
+    }
+}
+
 .substractContainerBlue {
     right: -2rem;
-    width: 324px;
+    width: 20rem;
 }
 
 .substractContainerPink {
     margin-left: -12rem;
     margin-top: -2rem;
-    width: 324px;
+    width: 20rem;
 }
 
 .substractContainerGreen {
     right: -5.5rem;
     top: 27rem;
-    width: 324px;
+    width: 20rem;
 }
 
 .frame {
@@ -103,7 +121,7 @@
 
 .substractText {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
@@ -159,12 +177,12 @@
 
 @media (min-width: 900px) and (max-width: 1200px) {
     .substractContainerBlue {
-        right: -50%;
+        left: 85%;
         width: 260px;
     }
 
     .substractContainerGreen {
-        right: -60%;
+        left:97%;
         width: 260px;
     }
 
@@ -202,7 +220,6 @@
     .substractContainerBlue,
     .substractContainerGreen {
         transform: rotate(-14deg);
-        /* margin-left: 10%; */
         width: 260px;
     }
     .substractContainerPink {

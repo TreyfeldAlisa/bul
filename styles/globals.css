@@ -54,11 +54,21 @@ body::-webkit-scrollbar {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 370px) and (max-width: 1200px) {
     .allworks {
         width: 100%;
     }
-        .homePageContainer {
-background: rgba(0, 0, 0, 0);
-        }
+    .homePageContainer {
+        background: rgb(0, 0, 0);
+        width: 100%;
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .homePageContainer {
+        background: rgb(0, 0, 0);
+        width: 100%;
+        padding: 16px;
+    }
 }

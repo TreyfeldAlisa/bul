@@ -64,6 +64,7 @@
 
     top: 8vh;
     height: auto;
+        margin-right: 7%;
 
     color: #dadfe5;
 }
@@ -472,7 +473,7 @@
 
     .verticalOverflow {
         margin: 10px 0;
-        width: 102%;
+        width: 100%;
     }
 
     .overflow {
