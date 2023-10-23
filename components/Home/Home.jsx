@@ -36,8 +36,7 @@ export default function Home() {
                         for this data
                     </div>
                 </div>
-            </div>
-            <div className={styles.buttonContainer}>
+
                 <button className={cn(styles.button, inter.className)}>Contact us</button>
             </div>
         </div>

@@ -1,5 +1,5 @@
 import Background from "@/components/Background/Background";
-import CanvasScene from "@/components/Canvas/Scene";
+// import CanvasScene from "@/components/Canvas/Scene";
 import Footer from "@/components/Footer/Footer";
 import NavBarMinimal from "@/components/Navbar/NavBarMinimal";
 import React from "react";
@@ -10,12 +10,19 @@ const DynamicComponentWithNoSSR = dynamic(() => import("@/components/Navbar/Navb
     loading: () => {console.log("loading")},
 });
 
+const DynamicCanvasWithNoSSR = dynamic(() => import("@/components/Canvas/Scene"), {
+    ssr: false,
+    loading: () => {
+        console.log("loading");
+    },
+});
+
 const HomePageLayout = ({ children }) => {
     return (
         <>
-            <Background shape={true}/>
+            <Background shape={true} />
             <NavBarMinimal />
-            <CanvasScene />
+            <DynamicCanvasWithNoSSR />
             <div className="homePageContainer">
                 <DynamicComponentWithNoSSR />
                 {children}

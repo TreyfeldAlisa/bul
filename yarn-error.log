@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /Users/alisatrejfeld/.nvm/versions/node/v18.12.1/bin/yarn dev
+  /usr/local/bin/node /Users/alisatrejfeld/.nvm/versions/node/v18.12.1/bin/yarn
 
 PATH: 
   /usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/alisatrejfeld/.nvm/versions/node/v18.12.1/bin:/opt/homebrew/bin:/opt/homebrew/sbin
@@ -8,15 +8,18 @@ Yarn version:
   1.22.19
 
 Node version: 
-  16.15.0
+  18.18.2
 
 Platform: 
   darwin arm64
 
 Trace: 
-  SyntaxError: /Users/alisatrejfeld/Desktop/BUL-lending/frontend/package.json: Unexpected token } in JSON at position 1023
-      at JSON.parse (<anonymous>)
-      at /Users/alisatrejfeld/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:1629:59
+  SyntaxError: Invalid value type 4594:0 in /Users/alisatrejfeld/Documents/GitHub/bul/yarn.lock
+      at Parser.unexpected (/Users/alisatrejfeld/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:63491:11)
+      at Parser.parse (/Users/alisatrejfeld/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:63619:16)
+      at parse (/Users/alisatrejfeld/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:63696:21)
+      at module.exports.exports.default (/Users/alisatrejfeld/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:63258:96)
+      at Function.<anonymous> (/Users/alisatrejfeld/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:3068:63)
       at Generator.next (<anonymous>)
       at step (/Users/alisatrejfeld/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:310:30)
       at /Users/alisatrejfeld/.nvm/versions/node/v18.12.1/lib/node_modules/yarn/lib/cli.js:321:13
@@ -39,6 +42,7 @@ npm manifest:
       "@types/react": "18.0.37",
       "@types/react-dom": "18.0.11",
       "autoprefixer": "10.4.14",
+      "caniuse-lite": "^1.0.30001553",
       "classnames": "^2.3.2",
       "eslint": "8.38.0",
       "eslint-config-next": "13.3.0",
@@ -53,6 +57,7 @@ npm manifest:
       "postcss": "8.4.22",
       "react": "18.2.0",
       "react-dom": "18.2.0",
+      "scrollmagic": "^2.0.8",
       "tailwindcss": "3.3.1",
       "three": "^0.152.2",
       "typescript": "5.0.4",
@@ -62,6 +67,7 @@ npm manifest:
     "devDependencies": {
       "@types/three": "^0.151.0",
       "file-loader": "^6.2.0",
+      "svg-inline-loader": "^0.8.2"
     }
   }
 
@@ -354,12 +360,6 @@ Lockfile:
     version "1.2.1"
     resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
     integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
-  
-  "@jpweeks/gltf-loader@jpweeks/gltf-loader":
-    version "2.0.0"
-    resolved "https://codeload.github.com/jpweeks/gltf-loader/tar.gz/422a33a8e944f076c54fa0cfb63f1b2acf584b2d"
-    dependencies:
-      loader-utils "^1.2.3"
   
   "@jridgewell/gen-mapping@^0.3.0", "@jridgewell/gen-mapping@^0.3.2":
     version "0.3.3"
@@ -1368,15 +1368,15 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/camera-controls/-/camera-controls-2.3.4.tgz#f372b5a4012b474df0ed0c67da7a3198d7efee0b"
     integrity sha512-swhc87YVHf9te0glBI7Oa/QBgsSCL4ZxtoR4V3vE6l7mEebsYRNL8y7Y2m2E6MrT0UTphM1S7mQqs0Sp7QTZ2g==
   
-  caniuse-lite@^1.0.30001406, caniuse-lite@^1.0.30001449, caniuse-lite@^1.0.30001464:
-    version "1.0.30001480"
-    resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001480.tgz"
-    integrity sha512-q7cpoPPvZYgtyC4VaBSN0Bt+PJ4c4EYRf0DrduInOz2SkFpHD5p3LnvEpqBp7UnJn+8x1Ogl1s38saUxe+ihQQ==
+  caniuse-lite@^1.0.30001406, caniuse-lite@^1.0.30001449, caniuse-lite@^1.0.30001464, caniuse-lite@^1.0.30001503:
+    version "1.0.30001553"
+    resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001553.tgz"
+    integrity sha512-N0ttd6TrFfuqKNi+pMgWJTb9qrdJu4JSpgPFLe/lrD19ugC6fZgF0pUewRowDwzdDnb9V41mFcdlYgl/PyKf4A==
   
-  caniuse-lite@^1.0.30001503:
-    version "1.0.30001515"
-    resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001515.tgz#418aefeed9d024cd3129bfae0ccc782d4cb8f12b"
-    integrity sha512-eEFDwUOZbE24sb+Ecsx3+OvNETqjWIdabMy52oOkIgcUtAsQifjUG9q4U9dgTHJM2mfk4uEPxc0+xuFdJ629QA==
+  caniuse-lite@^1.0.30001553:
+    version "1.0.30001553"
+    resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001553.tgz#e64e7dc8fd4885cd246bb476471420beb5e474b5"
+    integrity sha512-N0ttd6TrFfuqKNi+pMgWJTb9qrdJu4JSpgPFLe/lrD19ugC6fZgF0pUewRowDwzdDnb9V41mFcdlYgl/PyKf4A==
   
   caseless@~0.12.0:
     version "0.12.0"
@@ -4470,6 +4470,11 @@ Lockfile:
       ajv "^6.12.5"
       ajv-keywords "^3.5.2"
   
+  scrollmagic@^2.0.8:
+    version "2.0.8"
+    resolved "https://registry.yarnpkg.com/scrollmagic/-/scrollmagic-2.0.8.tgz#e0d7aff804c393c022fdc0c566f1edce3b4e9ed7"
+    integrity sha512-UYXEGBPVLziovXl3FjHGkY9c4UXKUKopIdXwWR2JapWxCo0U345wYegi7rcsv5vHf/ktc1bSNWy4QRFiV+Yccw==
+  
   semver@^6.3.0:
     version "6.3.0"
     resolved "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz"
@@ -5418,3 +5423,4 @@ Lockfile:
     version "3.7.2"
     resolved "https://registry.npmjs.org/zustand/-/zustand-3.7.2.tgz"
     integrity sha512-PIJDIZKtokhof+9+60cpockVOq05sJzHCriyvaLBmEJixseQ1a5Kdov6fWZfWOu5SK9c+FhH1jU0tntLxRJYMA==
+  LxRJYMA==

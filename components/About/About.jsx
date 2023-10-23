@@ -104,20 +104,20 @@ export default function About() {
                         viewBox="0 0 21 20"
                         fill="none"
                     >
-                        <g clip-path="url(#clip0_151_2397)">
+                        <g clipPath="url(#clip0_151_2397)">
                             <path
                                 d="M3.62695 10.0005L17.377 10.0005"
                                 stroke="white"
-                                stroke-width="1.8"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeWidth="1.8"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                             />
                             <path
                                 d="M11.7505 4.37402L17.3755 9.99902L11.7505 15.624"
                                 stroke="white"
-                                stroke-width="1.8"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeWidth="1.8"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                             />
                         </g>
                         <defs>
