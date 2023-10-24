@@ -11,10 +11,6 @@ const jet = localFonts({
 });
 
 export default function Also() {
-    useEffect(() => {
-        const video = document.getElementById("also");
-        video.play();
-    }, []);
 
     return (
         <div className={styles.container}>
@@ -24,6 +20,7 @@ export default function Also() {
                 <video
                     id="also"
                     controls={false}
+                    autoPlay={true}
                     type="video/mp4"
                     playsInline
                     loop

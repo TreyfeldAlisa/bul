@@ -12,10 +12,6 @@ import substract from "../../public/image/Subtract.png";
 import Link from "next/link";
 
 export default function Data() {
-    useEffect(() => {
-        const video = document.getElementById("data");
-        video.play();
-    }, []);
     return (
         <div className={styles.container} id="services">
             <div className={styles.imgContainer}>
@@ -24,6 +20,7 @@ export default function Data() {
                 <video
                     id="data"
                     controls={false}
+                    autoPlay={true}
                     type="video/mp4"
                     playsInline
                     loop

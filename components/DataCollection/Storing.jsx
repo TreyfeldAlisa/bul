@@ -11,10 +11,6 @@ const jet = localFonts({
 });
 
 export default function Storing() {
-    useEffect(() => {
-        const video = document.getElementById("storing");
-        video.play();
-    }, []);
 
     return (
         <div className={styles.container}>
@@ -24,6 +20,7 @@ export default function Storing() {
                 <video
                     id="storing"
                     controls={false}
+                    autoPlay={true}
                     type="video/mp4"
                     playsInline
                     loop

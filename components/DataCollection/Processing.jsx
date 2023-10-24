@@ -11,11 +11,6 @@ const jet = localFonts({
 });
 
 export default function Processing() {
-    useEffect(() => {
-        const video = document.getElementById("processing");
-        video.play();
-    }, []);
-
     return (
         <div className={styles.container}>
             <div className={cn(styles.imgContainer, styles.myImgContainer)}>
@@ -24,6 +19,7 @@ export default function Processing() {
                 <video
                     id="processing"
                     controls={false}
+                    autoPlay={true}
                     type="video/mp4"
                     playsInline
                     loop
