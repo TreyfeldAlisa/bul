@@ -1,4 +1,5 @@
 import React from "react";
+import Router from "next/router";
 import cn from "classnames";
 import localFonts from "next/font/local";
 import styles from "./About.module.css";
@@ -14,21 +15,23 @@ const jet = localFonts({ src: "../../public/fonts/jet-brains-mono/JetBrainsMono-
 export default function About() {
     return (
         <div className={styles.container} id="about">
-            <div className={styles.nav}>
-                <div className={styles.pointContainer}>
-                    <div className={styles.point}></div>
-                    <div className={cn(jet.className, styles.about)}>./ABOUT/</div>
+            <div className={styles.header}>
+                <div className={styles.nav}>
+                    <div className={styles.pointContainer}>
+                        <div className={styles.point}></div>
+                        <div className={cn(jet.className, styles.about)}>./ABOUT/</div>
+                    </div>
+                    <div className={cn(inter.className, styles.bul)}>blue underlined link</div>
                 </div>
-                <div className={cn(inter.className, styles.bul)}>blue underlined link</div>
-            </div>
-            <div className={cn(inter.className, styles.h1)} id="trigger">
-                helps <br /> companies
-            </div>
-            <div className={cn(inter.className, styles.textContainer)}>
-                <div className={cn(inter.className, styles.text)}>
-                    to benefit from data on each phase of its lifecycle. We apply our expertise in
-                    business automation with advanced software engineering and data analysis
-                    techniques to create added value to our clients.
+                <div className={cn(inter.className, styles.h1)} id="trigger">
+                    helps <br /> companies
+                </div>
+                <div className={cn(inter.className, styles.textContainer)}>
+                    <div className={cn(inter.className, styles.text)}>
+                        to benefit from data on each phase of its lifecycle. We apply our expertise
+                        in business automation with advanced software engineering and data analysis
+                        techniques to create added value to our clients.
+                    </div>
                 </div>
             </div>
 
@@ -95,7 +98,7 @@ export default function About() {
             </div>
 
             <div className={styles.buttonContainer}>
-                <button className={cn(styles.button, inter.className)}>
+                <button className={cn(styles.button, inter.className)} onClick={() => Router.push("/allworks")}>
                     View all our works
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

@@ -9,9 +9,14 @@
     align-items: center;
 }
 
+.header {
+    width: 52rem;
+}
+
 .nav {
     display: flex;
     flex-direction: row;
+    width: 41, 3125rem;
 }
 
 .pointContainer {
@@ -55,7 +60,7 @@
 
 .h1 {
     display: flex;
-    width: 38.625rem;
+    width: 51.125rem;
     flex-direction: column;
     flex-shrink: 0;
     color: #dadfe5;
@@ -69,7 +74,7 @@
 }
 
 .textContainer {
-    width: 35vw;
+    width: 38.625rem;
     display: flex;
     justify-content: center;
     margin-top: 48px;
@@ -269,12 +274,16 @@
     background: #141517;
 }
 
-/* @media screen and (max-width: 370px) {
+/* @media screen and (max-width: 390px) {
     .container {
         left: 0;
         width: 100%;
         margin-bottom: 400px;
     }
+
+        .header {
+            width: auto;
+        }
 
     .nav {
         width: 100%;
@@ -337,10 +346,15 @@
         top: 11.25rem;
     }
 
+    .header {
+        width: auto;
+    }
+
     .nav {
         width: 100%;
         gap: 1rem;
         align-items: center;
+        padding: 0 1rem 0 1.06rem;
     }
 
     .bul {
@@ -380,7 +394,7 @@
         font-style: normal;
         font-weight: 700;
         line-height: 110%;
-        width: 15.3125rem;
+        width: 15rem;
         letter-spacing: -0.8px;
     }
 

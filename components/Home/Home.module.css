@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 80px; */
     margin-top: -30rem;
     margin-bottom: 10rem;
 }
@@ -107,19 +106,22 @@
         flex-direction: column;
         align-content: center;
 
-        height: 21,4rem;
+        height: 21, 4rem;
         width: 100%;
+        margin: 0 auto;
 
         padding: 0 1rem 0 1.06rem;
     }
 
     .textContainer {
         height: 10.3125rem;
+        width: 21.375rem;
         margin-bottom: -5rem;
+        padding: 0 1rem 0 1.06rem;
     }
 
     .textTitle {
-        font-size: 64px;
+        font-size: 4rem;
         line-height: 86%;
         letter-spacing: -3.84px;
         width: 100%;
@@ -140,7 +142,6 @@
         display: flex;
         justify-content: center;
         height: 4rem;
-        margin-top: -1rem;
     }
 
     .button {
@@ -154,7 +155,7 @@
         display: flex;
         width: 100%;
         flex-direction: row;
-        margin: 0;
+        /* margin: 2rem; */
     }
 
     .videoContainer {
@@ -165,7 +166,9 @@
         width: 9rem;
         height: 3.35rem;
         gap: -1.5rem;
-        margin-right: 2.25rem;
+        margin-right: 1.90rem;
+        margin-top: 2rem;
+        padding: 0 1rem 0 1.06rem;
     }
     .video {
         height: 3.5rem;

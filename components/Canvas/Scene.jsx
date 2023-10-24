@@ -31,7 +31,7 @@ export default function CanvasScene() {
         <div className={styles.container}>
             <Canvas
                 className={styles.logo}
-                camera={{ position: [2, 0, 12.25], fov: [5.5] }}
+                camera={{ position: [2, 0, 12.25], fov: 6 }}
                 shadows
                 gl={{ preserveDrawingBuffer: true }}
                 eventPrefix="client"
@@ -44,7 +44,7 @@ export default function CanvasScene() {
                     <PresentationControls
                         cursor={true}
                         snap={true}
-                        // zoom={-1}
+                        zoom={1}
                         config={{ mass: 2, tension: 1500 }}
                         polar={[0, 0]}
                         azimuth={[-Math.PI / 1.4, Math.PI / 2]}

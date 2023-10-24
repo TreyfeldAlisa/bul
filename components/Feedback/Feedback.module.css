@@ -1,10 +1,4 @@
 .container {
-    /* height: 100%;
-
-    width: 57rem; */
-    /* left: calc(50% - 832px / 2 - 1px);
-    top: 170rem; */
-
     display: flex;
     flex-direction: column;
     position: relative;
@@ -15,44 +9,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 20px; */
 }
 
 .input {
     background-color: black;
-    /* height: 10rem;
-    width: 70rem; */
     display: flex;
     outline: none;
     font-weight: 700;
     font-size: 5rem;
     text-align: center;
-    /* margin-top: -1rem; */
 
     color: #dadfe5;
     height: 132px;
 }
 
-/* .input:first-child {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-} */
-
-/* .description {
-    background-color: black;
-        height: 10rem;
-        width: 70rem;
-        display: flex;
-        outline: none;
-        font-weight: 700;
-        font-size: 2rem;
-        text-align: center;
-        margin-top: -1rem;
-    
-        color: #dadfe5;
-} */
-/* .description::placeholder, */
 .input::placeholder {
     color: #dadfe5;
     text-align: center;
@@ -64,7 +34,6 @@
     opacity: 0.30000001192092896;
 }
 
-/* .description:hover, */
 .input:hover {
     opacity: 0.6;
     outline: none;
@@ -72,7 +41,6 @@
     width: 100%;
 }
 
-/* .description:active, */
 .input:active {
     opacity: 0;
     outline: none;
@@ -114,16 +82,36 @@
 
 @media screen and (max-width: 900px) {
     .input::placeholder {
-        font-size: 60px;
-        letter-spacing: 1px;
-        overflow: hidden;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 86%;
+        letter-spacing: -0.24rem;
+    }
+
+    .description {
+        height: 6.875rem !important;
+        overflow-wrap: break-word;
+        width: 21.4375rem;
+    }
+
+    .description::placeholder {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 3.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 80%;
+        letter-spacing: -0.24rem;
     }
 
     .input {
         width: 100%;
-        font-size: 60px;
-        overflow: hidden;
+        height: 3.4375rem;
+        font-size: 2rem;
+        color: white;
         height: unset;
+        padding-top: 10px;
     }
 
     .container {
@@ -131,12 +119,14 @@
     }
 
     .inputGroup {
+        height: 20.1875rem;
         width: 100% !important;
-
+        gap: 1rem;
     }
 
     .input:active {
         width: 100%;
+        color: white;
     }
 
     .input:hover {

@@ -357,7 +357,7 @@
     }
 }
 
-@media screen and (min-width: 340px) and (max-width: 900px) {
+@media screen and (min-width: 300px) and (max-width: 900px) {
     .container {
         left: 0;
         width: 100%;
@@ -383,11 +383,25 @@
     .textContainer {
         position: unset;
         z-index: 10;
+        padding: 0 1rem 0 1rem;
+        width: 21.375rem;
     }
 
     .h1 {
-        font-size: 78px;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 86%;
+        letter-spacing: -0.24rem;
         width: 100%;
+    }
+
+    .h2 {
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: -0.0175rem;
+        text-transform: uppercase;
     }
 
     .contentContainer {
@@ -461,9 +475,11 @@
     }
 
     .header {
-        margin-bottom: unset;
-        font-size: 40px;
-        width: 100%;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -0.12rem;
     }
 
     .verticalOverflow {

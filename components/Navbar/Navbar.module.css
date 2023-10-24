@@ -5,20 +5,23 @@
 .fixed {
     transform: scale(1);
     position: sticky;
-    height: 8vh;
+    height: 3.5rem;
+    /* width: 92.25rem; */
+    margin: 0 8rem 0 8rem;
     left: 15vw;
     top: 5vh;
 
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(17px);
 
-    border-radius: 57px;
+    border-radius: 3.5625rem;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 0px 20px;
+    flex-shrink: 0;
 
     z-index: 5;
 
@@ -32,23 +35,19 @@
 }
 
 .linkContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 6.5rem;
 
-    width: 35vw;
+    width: 41.9375rem;
 }
 
 .link {
-    width: 7vw;
-    height: 20px;
-
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
     line-height: 120%;
+    letter-spacing: -0.025rem;
 
     display: flex;
     letter-spacing: -0.02em;
@@ -59,19 +58,24 @@
 }
 
 .button {
-    padding: 16px 32px;
+    display: inline-flex;
+    padding: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
 
+    border-radius: 3.75rem;
     background: #cbcbcb;
-    border-radius: 60px;
-
-    font-style: normal;
-    font-weight: 600;
-    font-size: 17px;
-    line-height: 120%;
-
-    letter-spacing: -0.02em;
 
     color: #000000;
+
+    text-align: right;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    /* 1.5rem */
+    letter-spacing: -0.025rem;
 }
 
 .button:hover {
@@ -82,9 +86,17 @@
     background: #dadfe5;
 }
 
-@media (min-width: 900px) and (max-width: 1200px) {
+@media (min-width: 900px) and (max-width: 1300px) {
     .link {
         font-size: 15px;
+    }
+    .fixed {
+        width: 100%;
+        margin: 0;
+    }
+
+    .button {
+        font-size: 0.75rem;
     }
 }
 

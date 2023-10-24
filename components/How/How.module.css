@@ -182,7 +182,7 @@
     }
 
     .substractContainerGreen {
-        left:97%;
+        left: 97%;
         width: 260px;
     }
 
@@ -200,40 +200,66 @@
 }
 
 @media screen and (max-width: 900px) {
+    .container {
+        padding-bottom: 0;
+    }
     .substract {
         align-items: center;
     }
     .h1 {
-        font-size: 75px;
-        width: 82%;
+        width: 20.6875rem;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 86%;
+        letter-spacing: -0.24rem;
+        margin-top: 0;
+
+        z-index: 100;
     }
 
     .substractContainer {
         position: unset;
     }
 
+    .substractText {
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -0.12rem;
+    }
+
     .textContainer {
         order: 3;
-        width: unset;
+        width: 15.3125rem;
+        margin-left: 35%;
     }
 
     .substractContainerBlue,
     .substractContainerGreen {
         transform: rotate(-14deg);
         width: 260px;
+        margin-left: 25%;
+        margin-top: -2.5rem;
     }
     .substractContainerPink {
         transform: rotate(12deg);
         margin-top: -50px;
-        margin-left: 20%;
+        margin-left: -25%;
         width: 260px;
+        z-index: 10;
     }
 
     .substractContainerGreen {
         margin-top: -50px;
+        z-index: 100;
     }
     .text {
-        font-size: 33px;
-        width: 75%;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: -0.05rem;
     }
 }

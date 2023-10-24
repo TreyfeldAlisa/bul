@@ -70,7 +70,7 @@
 
     top: 9rem;
     height: auto;
-        margin-right: 7%;
+    margin-right: 7%;
 
     color: #dadfe5;
 }
@@ -384,12 +384,26 @@
     .textContainer {
         position: unset;
         z-index: 10;
-        margin-top: 36px;
+        padding: 0 1rem 0 1rem;
+        width: 21.375rem;
+        margin: 0;
     }
 
     .h1 {
-        font-size: 78px;
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 86%;
+        letter-spacing: -0.24rem;
         width: 100%;
+    }
+
+    .h2 {
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: -0.0175rem;
+        text-transform: uppercase;
     }
 
     .contentContainer {
@@ -405,9 +419,10 @@
 
     .gorizontalBlock {
         width: 100%;
-        height: unset;
+        height: 17rem;
         padding-top: 3em;
         padding-bottom: 2em;
+        justify-content: center;
     }
 
     .frameContainer {
@@ -468,9 +483,14 @@
     }
 
     .header {
-        margin-bottom: unset;
-        font-size: 40px;
-        width: 100%;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -0.12rem;
+        text-align: center;
+        width: 90%;
+        overflow-wrap: break-word;
     }
 
     .verticalOverflow {
@@ -488,7 +508,7 @@
 }
 
 @media screen and (min-width: 900px) and (max-width: 1300px) {
-        .gradient {
-                display: none;
-            }
+    .gradient {
+        display: none;
+    }
 }

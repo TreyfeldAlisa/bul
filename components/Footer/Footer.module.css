@@ -1,9 +1,10 @@
 .container {
-    height: 8rem;
+    height: 15.375rem;
 
     width: 100%;
 
     position: relative;
+    margin-bottom: -2rem;
     z-index: 2;
     color: black;
 }
@@ -95,11 +96,44 @@
     text-align: end;
 }
 
+@media screen and (min-width: 901px) and (max-width: 3500px) {
+        .container {
+                height: 18rem;
+        
+                width: 100%;
+                margin-bottom: 0;
+            }
+
+            .footer {
+                height: 100%;
+            }
+}
+
+@media screen and (min-width: 3501px) {
+    .container {
+        height: calc(100vh - 85vh);
+
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .footer {
+        height: 100%;
+    }
+}
+
 @media screen and (max-width: 900px) {
+
+    .container {
+            height: 10rem;
+    
+            width: 100%;
+            margin-bottom: 0;
+        }
+
     .footerContainer {
         flex-direction: column;
         gap: 20px;
-        margin-bottom: 40px;
     }
 
     .bulText {
@@ -218,6 +252,32 @@
         height: 20vh;
 
         background: radial-gradient(circle at 120% 0, rgba(1, 1, 1, 0) 43.5%, #cbcbcb 45%);
+        background-position: top left, top right, bottom right, bottom left;
+        background-size: 55% 55%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 3000px) {
+    .edge {
+        background-color: #cbcbcb;
+        width: 50px;
+        height: 20vh;
+
+        background: radial-gradient(circle at 150% 0, rgba(1, 1, 1, 0) 43.5%, #cbcbcb 45%);
+        background-position: top left, top right, bottom right, bottom left;
+        background-size: 55% 55%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width: 3001px) and (max-width: 4000px) {
+    .edge {
+        background-color: #cbcbcb;
+        width: 50px;
+        height: 20vh;
+
+        background: radial-gradient(circle at 180% 0, rgba(1, 1, 1, 0) 43.5%, #cbcbcb 45%);
         background-position: top left, top right, bottom right, bottom left;
         background-size: 55% 55%;
         background-repeat: no-repeat;

@@ -47,11 +47,10 @@ export default function HowWeCan() {
                 />
                 <input type="phone" name="phone" className={styles.input} placeholder="Phone" />
                 <input type="e-mail" name="mail" className={styles.input} placeholder="E-mail" />
-                <input
-                    type="input"
-                    name="task"
+                <textarea
+                rows="1"
                     className={cn(styles.input, styles.description)}
-                    placeholder="Description"
+                    placeholder="Description task"
                 />
             </div>
             <button className={cn(inter.className, styles.button)}>Send</button>
