@@ -24,7 +24,7 @@ export default function Data() {
                     disablePictureInPicture
                     webkit-playsinline=""
                     playsInline
-                    pip={false}
+                    pip='false'
                     className={styles.video}
                     src={require("../../public/video/1.mp4")}
                 />
