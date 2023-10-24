@@ -40,6 +40,9 @@
 
     filter: brightness(200%);
     opacity: 0.9;
+
+    background-color: transparent;
+    border-bottom: 1px solid transparent; /* хак для предотвращения мелькания при загрузке на некоторых версиях ios */
 }
 
 .video::-webkit-media-controls {
@@ -48,14 +51,18 @@
 
 .video::-webkit-media-controls-panel {
     display: none !important;
-    -webkit-appearance: none;
+        -webkit-appearance: none;
+        opacity: 0;
+        visibility: hidden;
 }
 
 /* Old shadow dom for play button */
 
 .video::-webkit-media-controls-play-button {
     display: none !important;
-    -webkit-appearance: none;
+        -webkit-appearance: none;
+        opacity: 0;
+        visibility: hidden;
 }
 
 /* New shadow dom for play button */
@@ -64,7 +71,9 @@
 
 .video::-webkit-media-controls-start-playback-button {
     display: none !important;
-    -webkit-appearance: none;
+        -webkit-appearance: none;
+        opacity: 0;
+        visibility: hidden;
 }
 
 .contentContainer {

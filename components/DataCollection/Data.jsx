@@ -18,11 +18,13 @@ export default function Data() {
                 <img src={substract} alt="subtract" className={styles.img} />
                 <div className={styles.gradient}> </div>{" "}
                 <video
-                    controls="false"
-                    autoPlay
-                    playsInline
-                    loop
+                    autoPlay={true}
                     muted
+                    loop
+                    disablePictureInPicture
+                    webkit-playsinline=""
+                    playsInline
+                    pip={false}
                     className={styles.video}
                     src={require("../../public/video/1.mp4")}
                 />
