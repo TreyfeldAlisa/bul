@@ -17,7 +17,8 @@ export default function Storing() {
                 <img src={substract} alt="subtract" className={styles.img} />
                 <div className={styles.gradient}> </div>{" "}
                 <video
-                    controls
+                    controls={false}
+                    type="video/mp4"
                     autoPlay
                     playsInline
                     loop
