@@ -18,10 +18,8 @@ export default function Data() {
                 <img src={substract} alt="subtract" className={styles.img} />
                 <div className={styles.gradient}> </div>{" "}
                 <video
-                    id="data"
-                    controls={false}
-                    autoPlay={true}
-                    type="video/mp4"
+                    controls="false"
+                    autoPlay
                     playsInline
                     loop
                     muted

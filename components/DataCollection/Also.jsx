@@ -18,10 +18,8 @@ export default function Also() {
                 <img src={substract} alt="subtract" className={styles.img} />
                 <div className={styles.gradient}> </div>{" "}
                 <video
-                    id="also"
-                    controls={false}
-                    autoPlay={true}
-                    type="video/mp4"
+                    controls="false"
+                    autoPlay
                     playsInline
                     loop
                     muted

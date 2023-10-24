@@ -17,10 +17,8 @@ export default function Processing() {
                 <img src={substract} alt="subtract" className={styles.img} />
                 <div className={styles.gradient}> </div>{" "}
                 <video
-                    id="processing"
-                    controls={false}
-                    autoPlay={true}
-                    type="video/mp4"
+                    controls="false"
+                    autoPlay
                     playsInline
                     loop
                     muted
