@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import cn from "classnames";
 import localFonts from "next/font/local";
 import styles from "./Also.module.css";
@@ -11,15 +11,20 @@ const jet = localFonts({
 });
 
 export default function Also() {
+    useEffect(() => {
+        const video = document.getElementById("also");
+        video.play();
+    }, []);
+
     return (
         <div className={styles.container}>
             <div className={cn(styles.imgContainer, styles.myImgContainer)}>
                 <img src={substract} alt="subtract" className={styles.img} />
                 <div className={styles.gradient}> </div>{" "}
                 <video
+                    id="also"
                     controls={false}
                     type="video/mp4"
-                    autoPlay
                     playsInline
                     loop
                     muted

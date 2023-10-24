@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import cn from "classnames";
 import localFonts from "next/font/local";
 import styles from "./DataCollection.module.css";
@@ -12,15 +12,19 @@ import substract from "../../public/image/Subtract.png";
 import Link from "next/link";
 
 export default function Data() {
+    useEffect(() => {
+        const video = document.getElementById("data");
+        video.play();
+    }, []);
     return (
         <div className={styles.container} id="services">
             <div className={styles.imgContainer}>
                 <img src={substract} alt="subtract" className={styles.img} />
                 <div className={styles.gradient}> </div>{" "}
                 <video
+                    id="data"
                     controls={false}
                     type="video/mp4"
-                    autoPlay
                     playsInline
                     loop
                     muted
