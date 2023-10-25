@@ -6,8 +6,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -30rem;
-    margin-bottom: 10rem;
+    margin-bottom: 21.07rem;
+    margin-top: -27rem;
 }
 
 .textTitle {
@@ -106,7 +106,7 @@
         flex-direction: column;
         align-content: center;
 
-        height: 21, 4rem;
+        height: 21.4rem;
         width: 100%;
         margin: 0 auto;
 

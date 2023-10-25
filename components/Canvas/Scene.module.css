@@ -1,25 +1,15 @@
 .container {
     width: 100%;
-    height: 100vh;
+    height: 27vw;
     position: relative;
     display: flex;
-    z-index: 100;
-    margin: 0;
-    padding: 0;
-    margin: 0 auto;
-    flex-direction: column;
-    top: -10rem;
-}
-
-.canvas {
     z-index: 10;
-    display: block;
+    margin: 0 auto;
+    top: -13rem;
 }
 
 .logo {
-    height: 80%;
-    z-index: 10;
-    margin-top: -250px;
+    z-index: 1000;
 }
 
 .group {
@@ -36,7 +26,88 @@
 }
 
 @media screen and (max-width: 900px) {
-    .logo {
-        margin-top: -50px;
+    .container {
+        height: 70vw;
+        top: -1rem;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px){
+    .container {
+        height: 60vw;
+        top: -11rem;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1900px) {
+    .container {
+        height: 48vw;
+        top: -11rem;
+    }
+}
+
+@media screen and (min-width: 1901px) and (max-width: 2000px) {
+    .container {
+        height: 47vw;
+    }
+}
+
+@media screen and (min-width: 2001px) and (max-width: 2200px) {
+    .container {
+        height: 42vw;
+    }
+}
+
+@media screen and (min-width: 2201px) and (max-width: 2300px) {
+    .container {
+        height: 40vw;
+    }
+}
+
+@media screen and (min-width: 2301px) and (max-width: 2500px) {
+    .container {
+        height: 39vw;
+    }
+}
+
+@media screen and (min-width: 2501px) and (max-width: 2600px) {
+    .container {
+        height: 36vw;
+    }
+}
+
+@media screen and (min-width: 2601px) and (max-width: 2800px) {
+    .container {
+        height: 34vw;
+    }
+}
+
+@media screen and (min-width: 2701px) and (max-width: 2900px) {
+    .container {
+        height: 34vw;
+    }
+}
+
+@media screen and (min-width: 2901px) and (max-width: 3200px) {
+    .container {
+        height: 30vw;
+    }
+}
+
+@media screen and (min-width: 3201px) and (max-width: 3500px) {
+    .container {
+        height: 28vw;
+    }
+}
+
+@media screen and (min-width: 3501px) and (max-width: 4000px) {
+    .container {
+        height: 26vw;
+    }
+}
+
+@media screen and (min-width: 4001px) and (max-width: 4600px) {
+    .container {
+        height: 22vw;
     }
 }

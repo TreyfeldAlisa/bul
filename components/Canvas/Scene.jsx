@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import * as THREE from "three";
-import { Canvas, extend, createRoot, events } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import {
     useGLTF,
     PresentationControls,
@@ -14,7 +14,20 @@ import styles from "./Scene.module.css";
 
 const Model = () => {
     const group = useRef();
-    const { nodes, materials } = useGLTF("/glb/WIP3D.gltf");
+
+    const model = useGLTF("/glb/WIP3D.gltf");
+
+    const { nodes, materials, scene } = model;
+
+    materials.Material.color.setHex(0x3da1f2);
+
+    nodes.Scene.scale.set(
+        1 * model.scene.scale.x,
+        1 * model.scene.scale.y,
+        1 * model.scene.scale.z,
+    );
+
+    console.log(useGLTF("/glb/WIP3D.gltf"));
 
     return (
         <group ref={group} dispose={null} className={styles.group}>
@@ -31,15 +44,16 @@ export default function CanvasScene() {
         <div className={styles.container}>
             <Canvas
                 className={styles.logo}
-                camera={{ position: [2, 0, 12.25], fov: 6 }}
+                camera={{ fov: 5, position: [2, 0, 12.25]}}
+                // camera={{ position: [2, 0, 12.25], fov: 6, near: 0.1, far: 100 }}
                 shadows
                 gl={{ preserveDrawingBuffer: true }}
                 eventPrefix="client"
                 frameloop="demand"
                 id="canvas"
-                dpr={[1,5]}
+                dpr={[1, 5]}
             >
-                <directionalLight intensity={0.7} position={[9, 5, 10]} />
+                <directionalLight intensity={0.5} position={[9, 5, 10]} />
                 <Suspense fallback={null}>
                     <PresentationControls
                         cursor={true}
@@ -51,7 +65,6 @@ export default function CanvasScene() {
                         rotation={[0, 0.3, 0]}
                         position={[0.1, 0, 0]}
                     >
-                        
                         <Model />
                     </PresentationControls>
                 </Suspense>
