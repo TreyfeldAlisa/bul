@@ -5,10 +5,11 @@
     align-items: center;
     overflow-x: hidden;
     padding-top: 50px;
+    margin-top: -1rem;
 }
 
 .img {
-    height: 6px;
+    height: 8px;
 
     z-index: 2;
 }
@@ -389,10 +390,12 @@
         left: 0;
         width: 100%;
         position: unset;
+        margin-top: -2rem;
     }
 
     .img {
         width: 100%;
+        object-fit: cover;
     }
 
     .gradient {

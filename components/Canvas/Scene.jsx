@@ -5,8 +5,6 @@ import {
     useGLTF,
     PresentationControls,
     AdaptiveDpr,
-    MeshDistortMaterial,
-    boxBufferGeometry,
 } from "@react-three/drei";
 import { Suspense } from "react";
 
@@ -45,7 +43,6 @@ export default function CanvasScene() {
             <Canvas
                 className={styles.logo}
                 camera={{ fov: 5, position: [2, 0, 12.25]}}
-                // camera={{ position: [2, 0, 12.25], fov: 6, near: 0.1, far: 100 }}
                 shadows
                 gl={{ preserveDrawingBuffer: true }}
                 eventPrefix="client"

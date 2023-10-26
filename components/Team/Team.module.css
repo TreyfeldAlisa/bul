@@ -16,23 +16,19 @@
 .imageBlockRight {
     width: 30rem;
     margin-top: 3vh;
-    margin-left: 20.7rem;
+    margin-left: 29rem;
     display: flex;
     gap: 300px;
 }
 
 .imageBlockLeft {
     width: 30rem;
-    margin-left: -3vw;
+    margin-left: -30rem;
     display: flex;
     gap: 300px;
 }
 
 .h1 {
-    display: flex;
-    width: 29.0625rem;
-    flex-direction: column;
-    flex-shrink: 0;
     display: flex;
     width: 29.0625rem;
     flex-direction: column;
@@ -44,7 +40,7 @@
     line-height: 76%;
     letter-spacing: -0.48rem;
 
-    margin-top: 20px;
+    margin-left: -21rem;
 
     z-index: 0;
 }
@@ -99,6 +95,12 @@
 
     .h1 {
         width: 100%;
+        margin-left: 0;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 86%;
+        letter-spacing: -0.24rem;
     }
 
     .imageBlockLeft {
@@ -107,7 +109,6 @@
         margin-top: 50px;
         gap: 40px;
         width: 100%;
-
     }
 
     .imageBlockRight {
@@ -139,6 +140,27 @@
         padding-left: unset;
         align-items: flex-end;
     }
+}
 
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+    .imageBlockLeft {
+        margin-left: unset;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 0;
+        gap: 40px;
+        width: 100%;
+    }
 
+    .imageBlockRight {
+        margin-left: unset;
+        flex-direction: column;
+        gap: 40px;
+        align-self: self-end;
+        padding-left: 28%;
+        margin-left: 0;
+        width: unset;
+            padding-left: unset;
+            align-items: flex-end;
+    }
 }

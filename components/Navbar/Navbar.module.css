@@ -95,8 +95,16 @@
         margin: 0;
     }
 
+        .linkContainer {
+            justify-content: center;
+            gap: 5rem;
+    
+            width: 30rem;
+        }
+
     .button {
         font-size: 0.75rem;
+        padding: 1rem 2rem;
     }
 }
 

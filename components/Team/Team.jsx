@@ -17,7 +17,7 @@ export default function Team() {
     return (
         <div className={styles.container} id="team">
             <div className={cn(inter.className, styles.h1)}>
-                Our <br /> team
+                Our team
             </div>
             <div className={styles.imageBlockLeft}>
                 <TeamCard

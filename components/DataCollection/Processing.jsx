@@ -3,17 +3,18 @@ import cn from "classnames";
 import localFonts from "next/font/local";
 import styles from "./Processing.module.css";
 
-import substract from "../../public/image/Subtract.png";
 
 const inter = localFonts({ src: "../../public/fonts/inter/Inter-Bold.ttf" });
 const jet = localFonts({
     src: "../../public/fonts/jet-brains-mono/JetBrainsMono-Regular.ttf",
 });
 
+import substract from "../../public/image/Subtract.png";
+
 export default function Processing() {
     return (
         <div className={styles.container}>
-            <div className={cn(styles.imgContainer, styles.myImgContainer)}>
+            <div className={styles.imgContainer}>
                 <img src={substract} alt="subtract" className={styles.img} />
                 <div className={styles.gradient}> </div>{" "}
                 <video

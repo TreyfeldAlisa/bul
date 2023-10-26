@@ -3,11 +3,12 @@
     flex-direction: column;
     position: relative;
     align-items: center;
+    margin-top: 7rem;
+    height: 100%;
 }
 
 .img {
-    height: 6px;
-
+    height: 8px;
     z-index: 2;
 }
 
@@ -22,7 +23,7 @@
     height: 46.375rem;
     width: 39rem;
     flex-shrink: 0;
-    top: -10rem;
+    top: -8rem;
     background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0) 16%),
         linear-gradient(90deg, rgba(0, 0, 0, 0) 92%, black 100%);
     z-index: 1;
@@ -383,15 +384,18 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 300px) and (max-width: 900px) {
     .container {
         left: 0;
         width: 100%;
         position: unset;
+        margin-top: 9rem;
     }
 
     .img {
-        width: 100%;
+        object-fit: cover;
+        height: 8px;
+        overflow: visible;
     }
 
     .gradient {
@@ -401,7 +405,7 @@
     .video {
         top: unset;
         left: unset;
-        margin: 0 auto 36px;
+        margin: 0 auto;
         height: 100%;
     }
 
@@ -516,9 +520,5 @@
     .overflow {
         width: 100%;
         height: 20rem;
-    }
-
-    .myImgContainer {
-        margin-top: 200px;
     }
 }
