@@ -30,6 +30,7 @@ export default function Team() {
                     role="CTO"
                     image={team2}
                     isCenter={true}
+                    style={{width: '20px'}}
                 />
             </div>
             <div className={styles.imageBlockRight}>

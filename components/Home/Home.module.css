@@ -178,8 +178,51 @@
     }
 }
 
-/* @media screen and (min-width: 3000px) {
-    .mainPage {
-            margin-left: 30rem;
+@media screen and (max-width: 340px) {
+    .container {
+        width: 100%;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textTitle {
+        text-align: start;
+        font-size: 3.5rem;
+        line-height: 76%;
+        letter-spacing: -0.3rem;
+        z-index: 2;
+        padding: 1rem;
+    }
+
+    .pointContainer {
+        width: 50%;
+    }
+
+    .text {
+        font-size: 0.8rem;
+        width: 100px;
+    }
+
+    .videoContainer {
+        width: 100%;
+            gap: 0rem;
+                margin-right: 0rem;
+                justify-content: flex-start;
+    }
+
+    .textContainer {
+        margin-right: unset;
+        width: 20rem;
+    }
+
+        .mainPage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
         }
-} */
+}

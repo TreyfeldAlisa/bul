@@ -8,8 +8,8 @@
 }
 
 html {
-    height: 100%;
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 body {
@@ -19,8 +19,7 @@ body {
     background-size: cover;
 
     color: #dadfe5;
-    height: 100%;
-    width: 100%;
+    min-width: 100%;
 
     overflow: auto;
     -ms-overflow-style: none;
@@ -30,6 +29,10 @@ body {
 body::-webkit-scrollbar {
     width: 0;
     height: 0;
+}
+
+.main {
+    min-width: 100%;
 }
 
 .allworks {
@@ -45,7 +48,6 @@ body::-webkit-scrollbar {
     height: 100%;
     background-color: black;
     margin: 0 auto;
-    /* padding-top: 300px; */
 }
 
 @media screen and (min-width: 1887px) {
@@ -66,9 +68,22 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 370px) {
+    html {
+        min-width: 100%;
+        height: 100%;
+    }
+
+    body {
+        min-width: 100%;
+    }
     .homePageContainer {
         background: rgb(0, 0, 0);
         width: 100%;
         padding: 16px;
+        overflow: hidden;
+    }
+
+    .allworks {
+        width: 100%;
     }
 }

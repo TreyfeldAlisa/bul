@@ -9,12 +9,14 @@
 .img {
     height: 8px;
     z-index: 2;
+    object-fit: cover;
 }
 
 .imgContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    width: 90%;
 }
 
 .gradient {
@@ -389,13 +391,11 @@
         margin-top: 40rem;
     }
 
-
-        .textContainer {
-            position: relative;
-            z-index: 100;
-            top: -35rem;
-        }
-    
+    .textContainer {
+        position: relative;
+        z-index: 100;
+        top: -35rem;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -407,9 +407,13 @@
         margin-top: 40rem;
     }
 
-        .img {
+    .img {
         width: 100%;
         object-fit: cover;
+    }
+
+    .imgContainer {
+        width: 100%;
     }
 
     .gradient {
@@ -682,4 +686,35 @@
     .myImgContainer {
         margin-top: 650px;
     }
+}
+
+@media screen and (max-width: 340px) {
+    .contentContainer {
+        top: -29rem;
+    }
+
+    .textContainer {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .h1 {
+        width: 100%;
+            font-size: 3.5rem;
+            line-height: 76%;
+            letter-spacing: -0.18rem;
+            z-index: 2;
+            padding: 5px 0px;
+            margin-left: -20px;
+
+    }
+
+    .h2 {
+        padding: 5px 0px;
+        margin-left: -20px;
+    }
+
+                .header {
+                    width: 100%;
+                }
 }

@@ -12,12 +12,15 @@
     height: 8px;
 
     z-index: 2;
+
+    object-fit: cover;
 }
 
 .imgContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    width: 90%;
 }
 
 .gradient {
@@ -398,6 +401,10 @@
         object-fit: cover;
     }
 
+    .imgContainer {
+        width: 100%;
+    }
+
     .gradient {
         display: none;
     }
@@ -539,4 +546,35 @@
     .gradient {
         display: none;
     }
+}
+
+@media screen and (max-width: 340px) {
+    .contentContainer {
+        top: -29rem;
+    }
+
+    .h1 {
+        width: 100%;
+        font-size: 3.5rem;
+        line-height: 76%;
+        letter-spacing: -0.18rem;
+        z-index: 2;
+        padding: 5px 0px;
+    }
+
+    .textContainer {
+        width: 100%;
+        margin-right: 10%;
+    }
+
+    .h2 {
+        padding: 5px 0px;
+    }
+
+    .header {
+        width: 100%;
+    }
+        .video {
+            left: 0rem;
+        }
 }

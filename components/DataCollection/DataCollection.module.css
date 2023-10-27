@@ -9,12 +9,14 @@
 .img {
     height: 8px;
     z-index: 2;
+    object-fit: cover;
 }
 
 .imgContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    width: 90%;
 }
 
 .gradient {
@@ -50,18 +52,18 @@
 
 .video::-webkit-media-controls-panel {
     display: none !important;
-        -webkit-appearance: none;
-        opacity: 0;
-        visibility: hidden;
+    -webkit-appearance: none;
+    opacity: 0;
+    visibility: hidden;
 }
 
 /* Old shadow dom for play button */
 
 .video::-webkit-media-controls-play-button {
     display: none !important;
-        -webkit-appearance: none;
-        opacity: 0;
-        visibility: hidden;
+    -webkit-appearance: none;
+    opacity: 0;
+    visibility: hidden;
 }
 
 /* New shadow dom for play button */
@@ -70,9 +72,9 @@
 
 .video::-webkit-media-controls-start-playback-button {
     display: none !important;
-        -webkit-appearance: none;
-        opacity: 0;
-        visibility: hidden;
+    -webkit-appearance: none;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .contentContainer {
@@ -386,7 +388,7 @@
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 900px) {
+@media screen and (max-width: 900px) {
     .container {
         left: 0;
         width: 100%;
@@ -397,6 +399,10 @@
     .img {
         width: 100%;
         object-fit: cover;
+    }
+
+    .imgContainer {
+        width: 100%;
     }
 
     .gradient {
@@ -437,7 +443,6 @@
     .contentContainer {
         position: unset;
         width: 100%;
-        gap: 27px;
     }
 
     .blockContainer {
@@ -448,9 +453,9 @@
 
     .gorizontalBlock {
         width: 100%;
-        height: unset;
-        padding-top: 5em;
-        padding-bottom: 3em;
+        height: 17rem;
+        padding-top: 3em;
+        justify-content: center;
     }
 
     .frameContainer {
@@ -529,10 +534,32 @@
     .contentContainer {
         top: -29rem;
     }
+
+    .img {
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 @media screen and (max-width: 340px) {
     .contentContainer {
         top: -29rem;
+    }
+
+    .h1 {
+        width: 100%;
+        font-size: 3rem;
+        line-height: 76%;
+        letter-spacing: -0.18rem;
+        z-index: 2;
+        padding: 5px 38px;
+    }
+
+    .h2 {
+        padding: 5px 38px;
+    }
+
+    .header {
+        width: 100%;
     }
 }
