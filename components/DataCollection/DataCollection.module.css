@@ -414,7 +414,8 @@
         top: unset;
         left: unset;
         margin: 36px auto;
-        height: 100%;
+        max-height: 45vh;
+        object-fit: contain;
     }
 
     .textContainer {

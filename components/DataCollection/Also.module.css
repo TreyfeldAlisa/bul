@@ -413,8 +413,9 @@
     .video {
         top: unset;
         left: -2rem;
-        margin: 36px auto 0;
-        height: 50%;
+        margin: 36px auto;
+        max-height: 45vh;
+        object-fit: contain;
     }
 
     .textContainer {
