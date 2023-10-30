@@ -87,3 +87,9 @@ body::-webkit-scrollbar {
         width: 100%;
     }
 }
+
+@media only screen and (max-device-width: 340px) and (orientation:portrait) {
+    textarea {
+        padding: 0;
+    }
+}
