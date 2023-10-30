@@ -20,11 +20,11 @@
 }
 
 .gradient {
-    position: absolute;
+    position: relative;
     height: 46.375rem;
     width: 39rem;
     flex-shrink: 0;
-    top: -2rem;
+    top: 20rem;
     background: linear-gradient(90deg, black 0%, rgba(0, 0, 0, 0) 16%),
         linear-gradient(90deg, rgba(0, 0, 0, 0) 92%, black 100%);
     z-index: 1;
