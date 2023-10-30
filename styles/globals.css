@@ -24,6 +24,7 @@ body {
     overflow: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    touch-action: none;
 }
 
 body::-webkit-scrollbar {
