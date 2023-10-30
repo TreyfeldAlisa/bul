@@ -394,6 +394,7 @@
         width: 100%;
         position: unset;
         margin-top: 16rem;
+        align-items: flex-start;
     }
 
     .img {
@@ -419,7 +420,7 @@
     .textContainer {
         position: unset;
         z-index: 10;
-        padding: 0 1rem 0 1rem;
+        padding: unset;
         width: 21.375rem;
     }
 
@@ -541,9 +542,31 @@
     }
 }
 
+@media screen and (min-width: 341px) and (max-width: 370px) {
+    .textContainer {
+        padding: unset;
+    }
+
+    .h1 {
+        width: 100%;
+        font-size: 3.6rem;
+        line-height: 76%;
+        letter-spacing: -0.18rem;
+        z-index: 2;
+    }
+
+    .h2 {
+        padding: 5px 0px;
+    }
+}
+
 @media screen and (max-width: 340px) {
     .contentContainer {
         top: -29rem;
+    }
+
+    .textContainer {
+        padding: unset;
     }
 
     .h1 {
@@ -552,11 +575,11 @@
         line-height: 76%;
         letter-spacing: -0.18rem;
         z-index: 2;
-        padding: 5px 38px;
+        padding: 5px 0px;
     }
 
     .h2 {
-        padding: 5px 38px;
+        padding: 5px 0px;
     }
 
     .header {

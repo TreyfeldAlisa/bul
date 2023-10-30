@@ -394,6 +394,7 @@
         width: 100%;
         position: unset;
         margin-top: -2rem;
+        align-items: flex-start;
     }
 
     .img {
@@ -422,6 +423,7 @@
         padding: 0 1rem 0 1rem;
         width: 21.375rem;
         margin: 0;
+        padding: unset;
     }
 
     .h1 {
@@ -542,6 +544,24 @@
     }
 }
 
+@media screen and (min-width: 341px) and (max-width: 370px) {
+    .textContainer {
+        padding: unset;
+    }
+
+    .h1 {
+        width: 100%;
+        font-size: 3.6rem;
+        line-height: 76%;
+        letter-spacing: -0.18rem;
+        z-index: 2;
+    }
+
+    .h2 {
+        padding: 5px 0px;
+    }
+}
+
 @media screen and (min-width: 900px) and (max-width: 1300px) {
     .gradient {
         display: none;
@@ -553,18 +573,17 @@
         top: -29rem;
     }
 
+    .textContainer {
+        padding: unset;
+    }
+
     .h1 {
         width: 100%;
-        font-size: 3.5rem;
+        font-size: 3rem;
         line-height: 76%;
         letter-spacing: -0.18rem;
         z-index: 2;
         padding: 5px 0px;
-    }
-
-    .textContainer {
-        width: 100%;
-        margin-right: 10%;
     }
 
     .h2 {
@@ -574,7 +593,7 @@
     .header {
         width: 100%;
     }
-        .video {
-            left: 0rem;
-        }
+    .video {
+        left: 0rem;
+    }
 }
