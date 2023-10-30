@@ -408,13 +408,13 @@
         display: none;
     }
 
-    .video {
-        top: unset;
-        left: unset;
-        margin: 36px auto;
-        max-height: 45vh;
-        object-fit: contain;
-    }
+        .video {
+            top: unset;
+            left: unset;
+            margin: 36px auto;
+            max-height: 45vh;
+            object-fit: contain;
+        }
 
     .textContainer {
         position: unset;

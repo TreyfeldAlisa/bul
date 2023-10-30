@@ -16,7 +16,7 @@ export default function Storing() {
         <div className={styles.container}>
             <div className={cn(styles.imgContainer, styles.myImgContainer)}>
                 <img src={substract} alt="subtract" className={styles.img} />
-                <div className={styles.gradient}> </div>{" "}
+                {/* <div className={styles.gradient}> </div>{" "} */}
                 <video
                     controls={false}
                     autoPlay
