@@ -169,4 +169,8 @@
         padding-left: unset;
         align-items: flex-end;
     }
+
+    .container {
+        width: 100%;
+    }
 }

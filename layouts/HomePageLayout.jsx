@@ -1,6 +1,5 @@
 import Background from "@/components/Background/Background";
 // import CanvasScene from "@/components/Canvas/Scene";
-import Footer from "@/components/Footer/Footer";
 import NavBarMinimal from "@/components/Navbar/NavBarMinimal";
 import React from "react";
 import dynamic from "next/dynamic";
@@ -27,7 +26,6 @@ const HomePageLayout = ({ children }) => {
                 <DynamicComponentWithNoSSR />
                 {children}
             </div>
-            <Footer />
         </>
     );
 };

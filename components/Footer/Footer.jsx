@@ -11,6 +11,14 @@ const jet = localFonts({
 export default function Footer({ isCategories }) {
     return (
         <div className={cn(styles.container, isCategories && styles.footerCategories)}>
+            <div className={styles.borderRadius}>
+                <div className={styles.edgeColorContainer}>
+                    <div className={cn(styles.borderEdge, styles.borderLeft)}></div>
+                </div>
+                <div className={styles.edgeColorContainer}>
+                    <div className={cn(styles.borderEdge, styles.borderRight)}></div>
+                </div>
+            </div>
             <div className={styles.edgeContainer}>
                 <div className={styles.edgeColorContainer}>
                     <div className={cn(styles.edge, styles.left)}></div>

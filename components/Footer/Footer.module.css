@@ -126,7 +126,20 @@
     }
 }
 
-@media screen and (min-width: 901px) and (max-width: 3500px) {
+@media screen and (min-width: 901px) and (max-width: 2699px) {
+    .container {
+        height: 17rem;
+
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .footer {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 2700px) and (max-width: 3300px) {
     .container {
         height: 18rem;
 
@@ -139,20 +152,7 @@
     }
 }
 
-@media screen and (min-width: 2700px) and (max-width: 3400px) {
-    .container {
-        height: 20rem;
-
-        width: 100%;
-        margin-bottom: 0;
-    }
-
-    .footer {
-        height: 100%;
-    }
-}
-
-@media screen and (min-width: 3401px) {
+@media screen and (min-width: 3301px) {
     .container {
         height: calc(100vh - 85vh);
 

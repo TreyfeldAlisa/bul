@@ -26,12 +26,10 @@ export default function Navbar() {
                         .on("enter", function (e) {
                             console.log("enter");
                             setClassList(styles.fixed);
-                            console.clear()
                         })
                         .on("leave", function (e) {
                             console.log("leave");
                             setClassList(styles.nav);
-                            console.clear();
                         })
                         .addTo(controller);
                 }
