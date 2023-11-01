@@ -65,16 +65,10 @@
     -webkit-appearance: none;
 }
 
-/* Old shadow dom for play button */
-
 .video::-webkit-media-controls-play-button {
     display: none !important;
     -webkit-appearance: none;
 }
-
-/* New shadow dom for play button */
-
-/* This one works! */
 
 .video::-webkit-media-controls-start-playback-button {
     display: none !important;
@@ -336,8 +330,8 @@
 
 .gorizontalBlock:hover .vector,
 .verticalBlock:hover .vector {
-    animation: vector 3s ease-in-out forwards;
-    -webkit-animation: vector 3s ease-in-out forwards;
+    animation: vector 1s ease-in-out forwards;
+    -webkit-animation: vector 1s ease-in-out forwards;
 }
 
 .gorizontalBlock:hover,

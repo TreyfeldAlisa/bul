@@ -24,7 +24,7 @@ export default function Data() {
                     disablePictureInPicture
                     webkit-playsinline=""
                     playsInline
-                    pip='false'
+                    pip="false"
                     className={styles.video}
                     src={require("../../public/video/1.mp4")}
                 />
@@ -49,7 +49,11 @@ export default function Data() {
                                     Computer vision
                                 </div>
                                 <Link className={styles.roundButton} href="/categories/1">
-                                    <div className={styles.vector}>&rarr;</div>
+                                    <div className={styles.vector}>
+                                        <img
+                                            src={require("../../public/image/arrow-right-black.svg")}
+                                        />
+                                    </div>
                                 </Link>
                             </div>
                             <div className={styles.frameContainer}>
@@ -102,7 +106,11 @@ export default function Data() {
                                         Data <br /> scraping
                                     </div>
                                     <div className={styles.roundButton}>
-                                        <div className={styles.vector}>&rarr;</div>
+                                        <div className={styles.vector}>
+                                            <img
+                                                src={require("../../public/image/arrow-right-black.svg")}
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={styles.frameVerticalContainer}>
