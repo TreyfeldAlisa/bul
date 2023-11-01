@@ -36,10 +36,10 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@cesium/engine@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@cesium/engine/-/engine-6.0.0.tgz#31a67f2c7c2dcae60a7d1a01922d7688f7e8f2c6"
-  integrity sha512-kuHr3va37ZZ7+MY0jJosuFcx1l8bRRURYmG2aePr2QosuMcjsOGEALBOCfi/Dvdoc+g2a1ijd9tToWQNtY/YLg==
+"@cesium/engine@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@cesium/engine/-/engine-6.1.0.tgz#5815ddd55363799798708cf7d2385256548e7ce7"
+  integrity sha512-gufv2rfvbPVA3foYrMP+8RBOpH9z8zq6PaHqFOSCmNlRDPDsoAhsjGAog+sjFz1ybFiQ2/DY84YB/2cjs+DYxw==
   dependencies:
     "@tweenjs/tween.js" "^21.0.0"
     "@zip.js/zip.js" "2.4.x"
@@ -61,12 +61,12 @@
     topojson-client "^3.1.0"
     urijs "^1.19.7"
 
-"@cesium/widgets@^4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@cesium/widgets/-/widgets-4.2.0.tgz#7acf63ed81320ca28a4aadd49b1b7a3fb360f6c8"
-  integrity sha512-69pEnugjDMrraJ1D6TDJfKNyFOVobT49GK5cOHb5ZR0EvSovfRXCwILI6+5Q6K68X3YkE5qnoyMwkEwJJR//BQ==
+"@cesium/widgets@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@cesium/widgets/-/widgets-4.3.0.tgz#d818362744c87ed63e534ff044d5d0e1fc61f95c"
+  integrity sha512-TZoJJJpv6Jp6bEl0t+nSQwGYvttp4RJbB6oYbtJPPqURz/JP/kYd+hAF+uV0DefRws3yl6waDDZ3Lrd09Ype4g==
   dependencies:
-    "@cesium/engine" "^6.0.0"
+    "@cesium/engine" "^6.1.0"
     nosleep.js "^0.12.0"
 
 "@esbuild/android-arm64@0.18.20":
@@ -1263,12 +1263,12 @@ caniuse-lite@^1.0.30001406, caniuse-lite@^1.0.30001464, caniuse-lite@^1.0.300015
   integrity sha512-cPiMKZgqgkg5LY3/ntGeLFUpi6tzddBNS58A4tnTgQw1zON7u2sZMU7SzOeVH4tj20++9ggL+V6FDOFMTaFFYA==
 
 cesium@^1.86.1:
-  version "1.110.1"
-  resolved "https://registry.yarnpkg.com/cesium/-/cesium-1.110.1.tgz#663d7c2c31f007f2ce1c473ebf4fac1239ffa97b"
-  integrity sha512-wlpIunlt6J5XLfm4AKj/Sx0yb0PI7jF8J+bcz/Kjy/K8JRu9WWto+MLXRLgx/++EFXpIzGcC+ZIUhEY/ThcOAA==
+  version "1.111.0"
+  resolved "https://registry.yarnpkg.com/cesium/-/cesium-1.111.0.tgz#33bb58c96be0425d7d87430a71949b78fa589e3e"
+  integrity sha512-wWtBa1KIMIJZR39U4Tv+CkJUeCfi83eVjCLxblYilD9zd4gb7vm3V9ytmJ0+v0sqk9RQws5JOg7Hobbs9ODTxQ==
   dependencies:
-    "@cesium/engine" "^6.0.0"
-    "@cesium/widgets" "^4.2.0"
+    "@cesium/engine" "^6.1.0"
+    "@cesium/widgets" "^4.3.0"
 
 chalk@^2.4.2:
   version "2.4.2"
@@ -1620,9 +1620,9 @@ earcut@^2.2.4:
   integrity sha512-/pjZsA1b4RPHbeWZQn66SWS8nZZWLQQ23oE3Eam7aroEFGEvwKAsJfZ9ytiEMycfzXWpca4FA9QIOehf7PocBQ==
 
 electron-to-chromium@^1.4.535:
-  version "1.4.572"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.572.tgz#ed9876658998138fe9e3aa47ecfa0bf914192a86"
-  integrity sha512-RlFobl4D3ieetbnR+2EpxdzFl9h0RAJkPK3pfiwMug2nhBin2ZCsGIAJWdpNniLz43sgXam/CgipOmvTA+rUiA==
+  version "1.4.573"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.573.tgz#aa6e5edf86448bb9398f529357abcc6a17b6341d"
+  integrity sha512-tzxxvKDTO3V5vzN2F+3v9jrK9gEbCdf1YYJUx/zVq1cyzyh+x1ddeYNNWh0ZS2ETNCVK3+Pns1LHIBq4w20X2Q==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -4722,9 +4722,9 @@ universalify@^0.2.0:
   integrity sha512-CJ1QgKmNg3CwvAv/kOFmtnEN05f0D/cn9QntgNOQlQF9dgvVTHj3t+8JPdjqawCHk7V/KA+fbUqzZ9XWhcqPUg==
 
 universalify@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
-  integrity sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.1.tgz#168efc2180964e6386d061e094df61afe239b18d"
+  integrity sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==
 
 update-browserslist-db@^1.0.13:
   version "1.0.13"
