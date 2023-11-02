@@ -514,13 +514,15 @@
     }
 
     .verticalOverflow {
-        width: 100%;
-        height: 20rem;
+        height: unset;
+        width: unset;
+        margin-right: unset;
     }
 
     .overflow {
         width: 100%;
-        height: 20rem;
+        height: 299px;
+        margin-bottom: 2rem;
     }
 }
 
