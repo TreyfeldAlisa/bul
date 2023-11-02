@@ -25,8 +25,6 @@ const Model = () => {
         1 * model.scene.scale.z,
     );
 
-    console.log(useGLTF("/glb/WIP3D.gltf"));
-
     return (
         <group ref={group} dispose={null} className={styles.group}>
             <primitive object={nodes.Scene} materials={materials.Material} />

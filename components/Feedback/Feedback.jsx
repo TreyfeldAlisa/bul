@@ -34,7 +34,7 @@ export default function HowWeCan() {
     };
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id="contact">
             <div className={styles.inputGroup}>
                 <input
                     type="text"
@@ -48,7 +48,7 @@ export default function HowWeCan() {
                 <input type="phone" name="phone" className={styles.input} placeholder="Phone" />
                 <input type="e-mail" name="mail" className={styles.input} placeholder="E-mail" />
                 <textarea
-                rows="1"
+                    rows="1"
                     className={cn(styles.input, styles.description)}
                     placeholder="Description task"
                 />

@@ -26,10 +26,12 @@ export default function Navbar() {
                         .on("enter", function (e) {
                             console.log("enter");
                             setClassList(styles.fixed);
+                            console.clear();
                         })
                         .on("leave", function (e) {
                             console.log("leave");
                             setClassList(styles.nav);
+                            console.clear();
                         })
                         .addTo(controller);
                 }
@@ -54,7 +56,7 @@ export default function Navbar() {
                     </Link>
                 ))}
             </div>
-            <button className={cn(inter.style, styles.button)}>Contact us</button>
+            <Link type="button" className={cn(inter.style, styles.button)} href="#contact">Contact us</Link>
         </div>
     );
 }
