@@ -3,7 +3,6 @@ import cn from "classnames";
 import localFonts from "next/font/local";
 import styles from "./Processing.module.css";
 
-
 const inter = localFonts({ src: "../../public/fonts/inter/Inter-Bold.ttf" });
 const jet = localFonts({
     src: "../../public/fonts/jet-brains-mono/JetBrainsMono-Regular.ttf",
@@ -44,7 +43,30 @@ export default function Processing() {
                                     Data insights and <br /> forecasting
                                 </div>
                                 <div className={styles.roundButton}>
-                                    <div className={styles.vector}>&rarr;</div>
+                                    <div className={styles.vector}>
+                                        <svg
+                                            width="25"
+                                            height="24"
+                                            viewBox="0 0 25 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.25244 12L20.7524 12"
+                                                stroke="black"
+                                                strokeWidth="2.4"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
+                                            <path
+                                                d="M14.0005 5.24902L20.7505 11.999L14.0005 18.749"
+                                                stroke="black"
+                                                strokeWidth="2.4"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                             <div className={styles.frameContainer}>
@@ -88,7 +110,30 @@ export default function Processing() {
                                         <br /> processing
                                     </div>
                                     <div className={styles.roundButton}>
-                                        <div className={styles.vector}>&rarr;</div>
+                                        <div className={styles.vector}>
+                                            <svg
+                                                width="25"
+                                                height="24"
+                                                viewBox="0 0 25 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M4.25244 12L20.7524 12"
+                                                    stroke="black"
+                                                    strokeWidth="2.4"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                                <path
+                                                    d="M14.0005 5.24902L20.7505 11.999L14.0005 18.749"
+                                                    stroke="black"
+                                                    strokeWidth="2.4"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={styles.frameVerticalContainer}>
@@ -125,7 +170,30 @@ export default function Processing() {
                                         automation
                                     </div>
                                     <div className={styles.roundButton}>
-                                        <div className={styles.vector}>&rarr;</div>
+                                        <div className={styles.vector}>
+                                            <svg
+                                                width="25"
+                                                height="24"
+                                                viewBox="0 0 25 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M4.25244 12L20.7524 12"
+                                                    stroke="black"
+                                                    strokeWidth="2.4"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                                <path
+                                                    d="M14.0005 5.24902L20.7505 11.999L14.0005 18.749"
+                                                    stroke="black"
+                                                    strokeWidth="2.4"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={styles.frameVerticalContainer}>
@@ -155,7 +223,30 @@ export default function Processing() {
                                     Data driven <br /> marketing
                                 </div>
                                 <div className={styles.roundButton}>
-                                    <div className={styles.vector}>&rarr;</div>
+                                    <div className={styles.vector}>
+                                        <svg
+                                            width="25"
+                                            height="24"
+                                            viewBox="0 0 25 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.25244 12L20.7524 12"
+                                                stroke="black"
+                                                strokeWidth="2.4"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
+                                            <path
+                                                d="M14.0005 5.24902L20.7505 11.999L14.0005 18.749"
+                                                stroke="black"
+                                                strokeWidth="2.4"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                             <div className={styles.frameContainer}>

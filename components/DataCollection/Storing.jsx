@@ -11,7 +11,6 @@ const jet = localFonts({
 });
 
 export default function Storing() {
-
     return (
         <div className={styles.container}>
             <div className={cn(styles.imgContainer, styles.myImgContainer)}>
@@ -46,7 +45,30 @@ export default function Storing() {
                                     Data visualization <br /> and dashboards
                                 </div>
                                 <div className={styles.roundButton}>
-                                    <div className={styles.vector}>&rarr;</div>
+                                    <div className={styles.vector}>
+                                        <svg
+                                            width="25"
+                                            height="24"
+                                            viewBox="0 0 25 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.25244 12L20.7524 12"
+                                                stroke="black"
+                                                strokeWidth="2.4"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
+                                            <path
+                                                d="M14.0005 5.24902L20.7505 11.999L14.0005 18.749"
+                                                stroke="black"
+                                                strokeWidth="2.4"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                             <div className={styles.frameContainer}>
@@ -100,7 +122,30 @@ export default function Storing() {
                                         Storage <br /> optimization
                                     </div>
                                     <div className={styles.roundButton}>
-                                        <div className={styles.vector}>&rarr;</div>
+                                        <div className={styles.vector}>
+                                            <svg
+                                                width="25"
+                                                height="24"
+                                                viewBox="0 0 25 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M4.25244 12L20.7524 12"
+                                                    stroke="black"
+                                                    strokeWidth="2.4"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                                <path
+                                                    d="M14.0005 5.24902L20.7505 11.999L14.0005 18.749"
+                                                    stroke="black"
+                                                    strokeWidth="2.4"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={styles.frameVerticalContainer}>
@@ -136,7 +181,30 @@ export default function Storing() {
                                         Complex <br /> content delivery <br /> and publishing
                                     </div>
                                     <div className={styles.roundButton}>
-                                        <div className={styles.vector}>&rarr;</div>
+                                        <div className={styles.vector}>
+                                            <svg
+                                                width="25"
+                                                height="24"
+                                                viewBox="0 0 25 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M4.25244 12L20.7524 12"
+                                                    stroke="black"
+                                                    strokeWidth="2.4"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                                <path
+                                                    d="M14.0005 5.24902L20.7505 11.999L14.0005 18.749"
+                                                    stroke="black"
+                                                    strokeWidth="2.4"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={styles.frameVerticalContainer}>
@@ -176,7 +244,30 @@ export default function Storing() {
                                     Third party <br /> integrations
                                 </div>
                                 <div className={styles.roundButton}>
-                                    <div className={styles.vector}>&rarr;</div>
+                                    <div className={styles.vector}>
+                                        <svg
+                                            width="25"
+                                            height="24"
+                                            viewBox="0 0 25 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.25244 12L20.7524 12"
+                                                stroke="black"
+                                                strokeWidth="2.4"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
+                                            <path
+                                                d="M14.0005 5.24902L20.7505 11.999L14.0005 18.749"
+                                                stroke="black"
+                                                strokeWidth="2.4"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
+                                        </svg>
+                                    </div>
                                 </div>
                             </div>
                             <div className={styles.frameContainer}>

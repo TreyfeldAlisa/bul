@@ -106,6 +106,8 @@
     line-height: 76%;
     letter-spacing: -0.48rem;
     z-index: 2;
+
+    text-rendering: optimizeLegibility;
 }
 
 .h2 {
@@ -118,6 +120,8 @@
     align-content: left;
 
     color: #dadfe5;
+
+    text-rendering: optimizeLegibility;
 }
 
 .blockContainer {
@@ -249,6 +253,10 @@
     transform: rotate(-45deg);
     font-size: 1.25rem;
     font-weight: bold;
+}
+
+.arrow {
+    width: 3rem;
 }
 
 .frameContainer {

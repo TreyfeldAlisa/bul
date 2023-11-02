@@ -50,9 +50,28 @@ export default function Data() {
                                 </div>
                                 <Link className={styles.roundButton} href="/categories/1">
                                     <div className={styles.vector}>
-                                        <img
-                                            src={require("../../public/image/arrow-right-black.svg")}
-                                        />
+                                        <svg
+                                            width="25"
+                                            height="24"
+                                            viewBox="0 0 25 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M4.25244 12L20.7524 12"
+                                                stroke="black"
+                                                strokeWidth="2.4"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
+                                            <path
+                                                d="M14.0005 5.24902L20.7505 11.999L14.0005 18.749"
+                                                stroke="black"
+                                                strokeWidth="2.4"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                            />
+                                        </svg>
                                     </div>
                                 </Link>
                             </div>
@@ -107,9 +126,28 @@ export default function Data() {
                                     </div>
                                     <div className={styles.roundButton}>
                                         <div className={styles.vector}>
-                                            <img
-                                                src={require("../../public/image/arrow-right-black.svg")}
-                                            />
+                                            <svg
+                                                width="25"
+                                                height="24"
+                                                viewBox="0 0 25 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M4.25244 12L20.7524 12"
+                                                    stroke="black"
+                                                    strokeWidth="2.4"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                                <path
+                                                    d="M14.0005 5.24902L20.7505 11.999L14.0005 18.749"
+                                                    stroke="black"
+                                                    strokeWidth="2.4"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                            </svg>
                                         </div>
                                     </div>
                                 </div>
@@ -151,7 +189,30 @@ export default function Data() {
                                         bypassing
                                     </div>
                                     <div className={styles.roundButton}>
-                                        <div className={styles.vector}>&rarr;</div>
+                                        <div className={styles.vector}>
+                                            <svg
+                                                width="25"
+                                                height="24"
+                                                viewBox="0 0 25 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M4.25244 12L20.7524 12"
+                                                    stroke="black"
+                                                    strokeWidth="2.4"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                                <path
+                                                    d="M14.0005 5.24902L20.7505 11.999L14.0005 18.749"
+                                                    stroke="black"
+                                                    strokeWidth="2.4"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className={styles.frameVerticalContainer}>

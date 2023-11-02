@@ -2,7 +2,6 @@ import React from "react";
 import LetsTalk from "@/components/Works/LetsTalk";
 import NavBarMinimal from "@/components/Navbar/NavBarMinimal";
 import Background from "@/components/Background/Background";
-import Footer from "@/components/Footer/Footer.jsx";
 import NavbarAllWorks from "@/components/Navbar/NavbarAllWorks";
 
 const CategoriesLayout = ({ children, shouldBeWithLinks, shape }) => {
@@ -13,7 +12,6 @@ const CategoriesLayout = ({ children, shouldBeWithLinks, shape }) => {
       <NavBarMinimal />
       {children}
       <LetsTalk />
-      <Footer isCategories={true} />
     </>
   );
 };
