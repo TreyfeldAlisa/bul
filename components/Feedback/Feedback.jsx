@@ -33,7 +33,7 @@ export default function HowWeCan() {
     };
 
     useEffect(() => {
-        const txHeight = 120;
+        const txHeight = 200;
         const tx = document.getElementsByTagName("textarea");
 
         for (let i = 0; i < tx.length; i++) {
