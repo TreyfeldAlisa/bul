@@ -13,7 +13,6 @@
 }
 
 .textContainer {
-    /* width: 35vw; */
     margin-left: 1vw;
     display: flex;
     flex-direction: column;
@@ -29,7 +28,6 @@
 
 .name {
     display: flex;
-    /* width: 23.375rem; */
     flex-direction: column;
     color: #dadfe5;
     font-size: 2rem;
@@ -54,18 +52,28 @@
         margin-left: 0;
     }
 
+    .textContainer {
+        margin-left: 0.9rem;
+    }
+
     .name {
-        width: 90%;
-        font-size: 29px;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -0.12rem;
+        overflow-wrap: break-word;
     }
 
     .role {
         width: 90%;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: -0.075rem;
+        opacity: 0.8;
     }
-
-        .textContainer {
-            width: 90%;
-        }
 
     .img {
         margin-right: unset;
@@ -75,4 +83,3 @@
         margin: 0 auto;
     }
 }
-

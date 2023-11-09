@@ -13,6 +13,16 @@
     padding-bottom: 200px;
 }
 
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+
 .imageBlockRight {
     width: 30rem;
     margin-top: 3vh;
@@ -23,7 +33,6 @@
 
 .imageBlockLeft {
     width: 30rem;
-    margin-left: -30rem;
     display: flex;
     gap: 300px;
 }
@@ -95,11 +104,12 @@
     .h1 {
         width: 100%;
         margin-left: 0;
-        font-size: 4rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 86%;
-        letter-spacing: -0.24rem;
+font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    /* 2rem */
+    letter-spacing: -0.12rem;
     }
 
     .imageBlockLeft {
