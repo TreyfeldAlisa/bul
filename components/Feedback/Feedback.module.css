@@ -172,6 +172,12 @@
     .input:active {
         width: 100%;
         color: white;
+
+        opacity: unset;
+        outline: unset;
+        font-weight: unset;
+        font-size: unset;
+        overflow: unset;
     }
 
     .input:hover {
