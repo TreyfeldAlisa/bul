@@ -157,6 +157,7 @@
         font-weight: 700;
         line-height: 80%;
         letter-spacing: -0.24rem;
+        overflow-wrap: break-all;
     }
 
     .input {
