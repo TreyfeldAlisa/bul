@@ -108,10 +108,17 @@
         letter-spacing: -0.24rem;
     }
 
+    .input {
+        -webkit-user-select: text;
+        -khtml-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+    }
+
     .description {
         font-size: 3rem;
-        overflow-wrap: break-word;
-        width: 21.4375rem;
+        overflow-wrap: break-all;
     }
 
     .description::placeholder {
