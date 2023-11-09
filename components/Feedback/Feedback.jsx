@@ -64,7 +64,7 @@ export default function HowWeCan() {
                     className={styles.input}
                     placeholder="Name"
                     onChange={truncate}
-                    value={inputValue}
+                    value={initialValue}
                 />
                 <input type="phone" name="phone" className={styles.input} placeholder="Phone" />
                 <input type="e-mail" name="mail" className={styles.input} placeholder="E-mail" />

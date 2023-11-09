@@ -108,6 +108,12 @@
         letter-spacing: -0.24rem;
     }
 
+    .description {
+        font-size: 3rem;
+        overflow-wrap: break-word;
+        width: 21.4375rem;
+    }
+
     .description::placeholder {
         display: flex;
         flex-wrap: wrap;
