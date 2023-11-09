@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import cn from "classnames";
 import localFonts from "next/font/local";
 import styles from "./Home.module.css";
@@ -37,7 +38,9 @@ export default function Home() {
                     </div>
                 </div>
 
-                <button className={cn(styles.button, inter.className)}>Contact us</button>
+                <Link className={cn(styles.button, inter.className)} href="#contact">
+                    Contact us
+                </Link>
             </div>
         </div>
     );
