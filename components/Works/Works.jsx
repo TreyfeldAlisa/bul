@@ -3,6 +3,8 @@ import cn from "classnames";
 import localFonts from "next/font/local";
 import styles from "./Works.module.css";
 
+import substract from "../../public/image/Subtract.png";
+
 const inter = localFonts({ src: "../../public/fonts/inter/Inter-Bold.ttf" });
 const jet = localFonts({ src: "../../public/fonts/jet-brains-mono/JetBrainsMono-Regular.ttf" });
 const interRegular = localFonts({ src: "../../public/fonts/inter/Inter-Regular.ttf" });

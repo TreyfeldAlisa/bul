@@ -13,7 +13,7 @@ const NavBarMinimal = () => {
     const [open, setOpen] = useState(false);
     return (
         <div className={cn(interReg.className, styles.navMinimal)}>
-            <Link href="#home" className={styles.logo}>
+            <Link href="/" className={styles.logo}>
                 <img alt="logo" src={logo} className={styles.logo} width={60} height={40} />
             </Link>
             <button type="button" onClick={() => setOpen(!open)}>

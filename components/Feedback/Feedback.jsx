@@ -59,8 +59,6 @@ export default function HowWeCan() {
             <div className={styles.inputGroup}>
                 <input
                     type="text"
-                    name="name"
-                    id="name"
                     className={styles.input}
                     placeholder="Name"
                     onChange={truncate}
