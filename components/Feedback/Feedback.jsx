@@ -33,7 +33,7 @@ export default function HowWeCan() {
     };
 
     useEffect(() => {
-        const txHeight = 97;
+        const txHeight = 120;
         const tx = document.getElementsByTagName("textarea");
 
         for (let i = 0; i < tx.length; i++) {
@@ -42,14 +42,14 @@ export default function HowWeCan() {
             } else {
                 tx[i].setAttribute(
                     "style",
-                    "height:" + tx[i].scrollHeight + "px;overflow-y:hidden;",
+                    "height:" + txHeight + tx[i].scrollHeight + "px;overflow-y:hidden;",
                 );
             }
             tx[i].addEventListener("input", OnInput, false);
         }
 
         function OnInput(e) {
-            this.style.height = 0;
+            this.style.height = txHeight;
             this.style.height = this.scrollHeight + "px";
         }
     });
