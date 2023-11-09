@@ -3,11 +3,16 @@ import Link from "next/link";
 import styles from "./NavBarMinimal.module.css";
 import logo from "../../public/image/logo-header.png";
 import { links } from "../linksMock";
+import localFonts from "next/font/local";
+import cn from "classnames";
+
+const interReg = localFonts({ src: "../../public/fonts/inter/Inter-Regular.ttf" });
+const inter = localFonts({ src: "../../public/fonts/inter/Inter-Bold.ttf" });
 
 const NavBarMinimal = () => {
     const [open, setOpen] = useState(false);
     return (
-        <div className={styles.navMinimal}>
+        <div className={cn(interReg.className, styles.navMinimal)}>
             <Link href="#home" className={styles.logo}>
                 <img alt="logo" src={logo} className={styles.logo} width={60} height={40} />
             </Link>
@@ -52,7 +57,9 @@ const NavBarMinimal = () => {
                             {name}
                         </Link>
                     ))}
-                    <button className={styles.button}>Contact us</button>
+                    <Link className={cn(inter.className, styles.button)} href="#contact">
+                        Contact us
+                    </Link>
                 </div>
             )}
         </div>
