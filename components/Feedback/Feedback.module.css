@@ -140,7 +140,9 @@
         -khtml-user-select: initial;
         -moz-user-select: initial;
         -ms-user-select: initial;
-        user-select: initial;
+        user-select:initial;
+        font-family: sans-serif;
+        display: block;
     }
 
     .description {
