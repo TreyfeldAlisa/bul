@@ -115,6 +115,13 @@
         line-height: 80%;
         letter-spacing: -0.24rem;
     }
+    .input {
+        -webkit-user-select: text;
+        -khtml-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        user-select: text;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -137,6 +144,7 @@
     .description {
         font-size: 3rem;
         overflow-wrap: break-all;
+        width: 80%;
     }
 
     .description::placeholder {
