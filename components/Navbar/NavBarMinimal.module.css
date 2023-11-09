@@ -14,7 +14,7 @@
 }
 
 .linkContainer {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(4, 4, 4, 0.4);
     backdrop-filter: blur(17px);
     position: absolute;
     width: 95%;
@@ -24,7 +24,7 @@
     margin: 0 auto;
     margin-top: 50px;
     gap: 20px;
-    padding: 20px 0px;
+    padding: 24px 0px;
     border-radius: 5px;
 }
 

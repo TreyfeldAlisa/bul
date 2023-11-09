@@ -1,11 +1,11 @@
 .container {
-    border-radius: 48px 48px 0px 0px;
+    border-radius: 32px 32px 0px 0px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     align-items: center;
     width: 100%;
-    margin-top: 330px;
+    margin-top: 250px;
     background-color: black;
 }
 
