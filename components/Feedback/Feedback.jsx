@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import cn from "classnames";
 import localFonts from "next/font/local";
 import styles from "./Feedback.module.css";
@@ -7,31 +7,44 @@ const inter = localFonts({ src: "../../public/fonts/inter/Inter-Bold.ttf" });
 const jet = localFonts({ src: "../../public/fonts/jet-brains-mono/JetBrainsMono-Regular.ttf" });
 
 export default function HowWeCan() {
-    const [value, setValue] = useState("");
+    const [initialValue, setInitialValue] = useState("");
+    const [concatValue, setConcatValue] = useState("");
+
+    const inputValue = initialValue.length > 5 ? concatValue : initialValue;
+
+    console.log(concatValue, initialValue, inputValue);
 
     const truncate = (event) => {
         if (event) {
             const { value } = event.target;
 
-            // const returnedValue =
-            //         value.length > 24
-            //             ? `...${value.substring(value.length - 24, value.length - 1)}`
-            //             : value;
+            console.log("value", value);
 
-            const returnedValue =
-                value.length > 5
-                    ? `...${value.substring(value.length - 5, value.length - 1)}`
-                    : value;
+            setInitialValue(value);
 
-            setValue(returnedValue);
+            if (value.length > 5) {
 
-            if (value.includes(".")) {
-                value.substring(3, value.length);
-                setValue(value);
+                const returnedValue = `...${value.substring(value.length - 5, value.length)}`;
+
+                setConcatValue(returnedValue);
             }
         }
+
         return "";
     };
+
+    useEffect(() => {
+        const tx = document.getElementsByTagName("textarea");
+        for (let i = 0; i < tx.length; i++) {
+            tx[i].setAttribute("style", "height:" + tx[i].scrollHeight + "px;overflow-y:hidden;");
+            tx[i].addEventListener("input", OnInput, false);
+        }
+
+        function OnInput() {
+            this.style.height = 0;
+            this.style.height = this.scrollHeight + "px";
+        }
+    });
 
     return (
         <div className={styles.container} id="contact">
@@ -43,7 +56,7 @@ export default function HowWeCan() {
                     className={styles.input}
                     placeholder="Name"
                     onChange={truncate}
-                    value={value}
+                    value={inputValue}
                 />
                 <input type="phone" name="phone" className={styles.input} placeholder="Phone" />
                 <input type="e-mail" name="mail" className={styles.input} placeholder="E-mail" />
