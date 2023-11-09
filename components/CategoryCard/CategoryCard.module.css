@@ -4,9 +4,9 @@
     align-items: center;
     width: 95%;
     margin: 0 auto;
-    margin-top: 400px;
+    margin-top: 250px;
     background-color: black;
-    border-radius: 48px 48px 0px 0px;
+    border-radius: 32px 32px 0px 0px;
 }
 
 .header {
@@ -63,7 +63,7 @@
 
 .chipsContaner {
     display: inline-flex;
-   align-items: center;
+    align-items: center;
     gap: 8px;
 
     margin: 24px 0 130px 0;
