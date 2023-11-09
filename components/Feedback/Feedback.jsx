@@ -23,7 +23,6 @@ export default function HowWeCan() {
             setInitialValue(value);
 
             if (value.length > 5) {
-
                 const returnedValue = `...${value.substring(value.length - 5, value.length)}`;
 
                 setConcatValue(returnedValue);
@@ -34,13 +33,22 @@ export default function HowWeCan() {
     };
 
     useEffect(() => {
+        const txHeight = 97;
         const tx = document.getElementsByTagName("textarea");
+
         for (let i = 0; i < tx.length; i++) {
-            tx[i].setAttribute("style", "height:" + tx[i].scrollHeight + "px;overflow-y:hidden;");
+            if (tx[i].value == "") {
+                tx[i].setAttribute("style", "height:" + txHeight + "px;overflow-y:hidden;");
+            } else {
+                tx[i].setAttribute(
+                    "style",
+                    "height:" + tx[i].scrollHeight + "px;overflow-y:hidden;",
+                );
+            }
             tx[i].addEventListener("input", OnInput, false);
         }
 
-        function OnInput() {
+        function OnInput(e) {
             this.style.height = 0;
             this.style.height = this.scrollHeight + "px";
         }
