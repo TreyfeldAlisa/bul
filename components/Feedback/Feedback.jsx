@@ -55,7 +55,7 @@ export default function HowWeCan() {
     });
 
     return (
-        <div className={styles.container} id="contact">
+        <form className={styles.container} id="contact">
             <div className={styles.inputGroup}>
                 <input
                     type="text"
@@ -66,8 +66,8 @@ export default function HowWeCan() {
                     onChange={truncate}
                     value={initialValue}
                 />
-                <input type="phone" name="phone" className={styles.input} placeholder="Phone" />
-                <input type="e-mail" name="mail" className={styles.input} placeholder="E-mail" />
+                <input type="tel" name="phone" className={styles.input} placeholder="Phone" />
+                <input type="email" name="mail" className={styles.input} placeholder="E-mail" />
                 <textarea
                     rows="1"
                     type="text"
@@ -76,6 +76,6 @@ export default function HowWeCan() {
                 />
             </div>
             <button className={cn(inter.className, styles.button)}>Send</button>
-        </div>
+        </form>
     );
 }

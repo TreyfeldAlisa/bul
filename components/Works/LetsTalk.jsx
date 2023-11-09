@@ -41,7 +41,7 @@ export default function LetsTalk() {
                             styles.inputDescription,
                             interRegular.className,
                         )}
-                        placeholder="Description"
+                        placeholder="Description task"
                     />
                     <button type="submit" className={cn(inter.className, styles.button)}>
                         Send
