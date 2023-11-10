@@ -11,11 +11,11 @@ export default function Background(shape) {
             <div className={styles.videoContainer}>
                 <video
                     autoPlay
-                    muted=""
-                    loop=""
-                    disablePictureInPicture=""
-                    webkit-playsinline=""
-                    playsInline=""
+                    muted
+                    loop
+                    disablePictureInPicture
+                    webkit-playsinline
+                    playsInline
                     pip="false"
                     className={cn(styles.video, "embed-responsive-item")}
                     src={require("../../public/video/ASCII.mp4")}

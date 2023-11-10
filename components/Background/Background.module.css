@@ -27,6 +27,10 @@
     border-bottom: 1px solid transparent;
 }
 
+.video::-webkit-media-controls {
+    display: none !important;
+}
+
 .video::-webkit-media-controls-panel {
     display: none !important;
     -webkit-appearance: none;
