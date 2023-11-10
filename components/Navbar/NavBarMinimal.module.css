@@ -4,7 +4,6 @@
     flex-direction: row;
     justify-content: space-between;
     position: sticky;
-    border-radius: 4px;
     gap: 27px;
     background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%);
     z-index: 1000;

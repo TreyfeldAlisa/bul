@@ -28,6 +28,22 @@
 
 .video::-webkit-media-controls {
     display: none !important;
+    opacity: 0;
+    z-index: 2147483647;
+}
+
+.video::slotted::-webkit-media-controls-container {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    -webkit-appearance: none !important;
+}
+
+.video:host::shadow::-webkit-media-controls-container {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    -webkit-appearance: none !important;
 }
 
 .shape {

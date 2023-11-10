@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import styles from "./NavBarMinimal.module.css";
-import logo from "../../public/image/logo-header.png";
+import logo from "../../public/image/bul-blue.png";
 import { links } from "../linksMock";
 import localFonts from "next/font/local";
 import cn from "classnames";
