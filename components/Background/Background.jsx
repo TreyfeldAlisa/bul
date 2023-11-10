@@ -1,11 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import cn from "classnames";
 
 import styles from "./Background.module.css";
 
 export default function Background(shape) {
-    // useEffect(() => {
-    // }, []);
 
     return (
         <div className={cn(styles.container)}>
@@ -18,7 +16,6 @@ export default function Background(shape) {
                     playsInline
                     loop
                     muted
-                    type="video/mp4"
                     className={cn(styles.video, "embed-responsive-item")}
                     src={require("../../public/video/ASCII.mp4")}
                 />
