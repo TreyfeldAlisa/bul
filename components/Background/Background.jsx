@@ -11,7 +11,6 @@ export default function Background(shape) {
             <div className={styles.videoContainer}>
                 <video
                     controls
-                    autoPlay
                     preload="none"
                     playsInline
                     loop
@@ -19,7 +18,6 @@ export default function Background(shape) {
                     className={cn(styles.video, "embed-responsive-item")}
                     src={require("../../public/video/ASCII.mp4")}
                     poster={poster}
-                    lazyLoad
                 />
             </div>
         </div>
