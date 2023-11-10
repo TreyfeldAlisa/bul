@@ -27,31 +27,27 @@
     appearance: none !important;
     -webkit-appearance: none !important;
 }
-/* 
-.video::-webkit-media-controls {
+
+.video::-webkit-media-controls-panel {
     display: none !important;
+    -webkit-appearance: none;
     opacity: 0;
-    z-index: 2147483647;
-    appearance: none !important;
-    -webkit-appearance: none !important;
-    visibility: hidden !important;
+    visibility: hidden;
 }
 
-.video::slotted::-webkit-media-controls-container {
+.video::-webkit-media-controls-play-button {
     display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    -webkit-appearance: none !important;
-    appearance: none !important;
+    -webkit-appearance: none;
+    opacity: 0;
+    visibility: hidden;
 }
 
-.video:host::shadow::-webkit-media-controls-container {
+.video::-webkit-media-controls-start-playback-button {
     display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    -webkit-appearance: none !important;
-    appearance: none !important;
-} */
+    -webkit-appearance: none;
+    opacity: 0;
+    visibility: hidden;
+}
 
 .shape {
     position: absolute;

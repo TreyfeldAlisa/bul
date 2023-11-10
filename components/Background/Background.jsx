@@ -10,17 +10,18 @@ export default function Background(shape) {
             {shape.shape ? <div className={styles.shape} /> : null}
             <div className={styles.videoContainer}>
                 <video
-                    controls
                     autoPlay
-                    preload="none"
-                    playsInline
+                    muted=""
+                    loop=""
+                    disablePictureInPicture=""
+                    webkit-playsinline=""
+                    playsInline=""
+                    pip="false"
                     loop
                     muted
                     className={cn(styles.video, "embed-responsive-item")}
                     src={require("../../public/video/ASCII.mp4")}
                     poster={poster}
-                    onPress={() => []}
-                    pointerEvents="none"
                 />
             </div>
         </div>
