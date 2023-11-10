@@ -51,6 +51,9 @@
     opacity: 0;
     visibility: hidden;
 }
+.video::-webkit-media-controls-panel-container {
+    display: none !important;
+}
 
 .shape {
     position: absolute;
