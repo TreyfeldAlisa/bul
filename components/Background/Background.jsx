@@ -11,7 +11,6 @@ export default function Background(shape) {
             <div className={styles.videoContainer}>
                 <video
                     autoPlay
-                    controls
                     preload
                     playsInline
                     loop
