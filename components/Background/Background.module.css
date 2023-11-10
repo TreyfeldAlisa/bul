@@ -24,12 +24,17 @@
     height: 100%;
     z-index: -2;
     height: -webkit-fill-available;
+    appearance: none !important;
+    -webkit-appearance: none !important;
 }
 
 .video::-webkit-media-controls {
     display: none !important;
     opacity: 0;
     z-index: 2147483647;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    visibility: hidden !important;
 }
 
 .video::slotted::-webkit-media-controls-container {
@@ -37,6 +42,7 @@
     visibility: hidden !important;
     opacity: 0 !important;
     -webkit-appearance: none !important;
+    appearance: none !important;
 }
 
 .video:host::shadow::-webkit-media-controls-container {
@@ -44,6 +50,7 @@
     visibility: hidden !important;
     opacity: 0 !important;
     -webkit-appearance: none !important;
+    appearance: none !important;
 }
 
 .shape {
