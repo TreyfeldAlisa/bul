@@ -17,8 +17,6 @@ export default function Background(shape) {
                     webkit-playsinline=""
                     playsInline=""
                     pip="false"
-                    loop
-                    muted
                     className={cn(styles.video, "embed-responsive-item")}
                     src={require("../../public/video/ASCII.mp4")}
                     poster={poster}
