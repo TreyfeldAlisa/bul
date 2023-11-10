@@ -4,10 +4,8 @@ import cn from "classnames";
 import styles from "./Background.module.css";
 
 export default function Background(shape) {
-    useEffect(() => {
-        const video = document.getElementById("video");
-        video.removeAttribute("controls");
-    }, []);
+    // useEffect(() => {
+    // }, []);
 
     return (
         <div className={cn(styles.container)}>
