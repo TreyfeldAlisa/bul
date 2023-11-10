@@ -19,6 +19,8 @@ export default function Background(shape) {
                     className={cn(styles.video, "embed-responsive-item")}
                     src={require("../../public/video/ASCII.mp4")}
                     poster={poster}
+                    onPress={() => []}
+                    pointerEvents="none"
                 />
             </div>
         </div>
