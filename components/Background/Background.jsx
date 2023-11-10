@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import cn from "classnames";
 
 import styles from "./Background.module.css";
 
 export default function Background(shape) {
+    useEffect(() => {
+        const video = document.getElementById("video");
+        video.removeAttribute("controls");
+    }, []);
 
     return (
         <div className={cn(styles.container)}>
