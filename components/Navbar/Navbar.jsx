@@ -6,6 +6,7 @@ import logo from "../../public/image/bul-blue.png";
 
 import styles from "./Navbar.module.css";
 import { links } from "../linksMock";
+import { abort } from "process";
 
 const inter = localFonts({ src: "../../public/fonts/inter/Inter-Bold.ttf" });
 
@@ -39,24 +40,75 @@ export default function Navbar() {
         load();
     });
 
+    useEffect(() => {
+        const contact = document.getElementById("contactLink");
+        const home = document.getElementById("homeLink");
+        const team = document.getElementById("teamLink");
+        const services = document.getElementById("servicesLink");
+        const about = document.getElementById("aboutLink");
+
+        contact.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            if (document.getElementById("contact")) {
+                document.getElementById("contact").scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
+        });
+
+        home.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.getElementById("home").scrollIntoView({
+                behavior: "smooth",
+            });
+        });
+
+        team.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.getElementById("team").scrollIntoView({
+                behavior: "smooth",
+            });
+        });
+
+        services.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.getElementById("services").scrollIntoView({
+                behavior: "smooth",
+            });
+        });
+
+        about.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            document.getElementById("about").scrollIntoView({
+                behavior: "smooth",
+            });
+        });
+    }, []);
+
     return (
         <div className={cn(classList)} id="navbar">
-            <Link href="#home" className={styles.logo}>
+            <Link href="#home" className={styles.logo} id="homeLink">
                 <img alt="logo" src={logo} className={styles.logo} width={115} height={52} />
             </Link>
             <div className={styles.linkContainer}>
-                {links.map(({ href, name }) => (
-                    <Link
-                        href={href}
-                        key={href}
-                        className={styles.link}
-                        onClick={() => setOpen(false)}
-                    >
+                {links.map(({ href, name, id }) => (
+                    <Link href={href} key={href} id={id} className={styles.link}>
                         {name}
                     </Link>
                 ))}
             </div>
-            <Link type="button" className={cn(inter.style, styles.button)} href="#contact">
+            <Link
+                type="button"
+                className={cn(inter.style, styles.button)}
+                href="#contact"
+                id="contactLink"
+            >
                 Contact us
             </Link>
         </div>

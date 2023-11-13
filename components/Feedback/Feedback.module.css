@@ -4,6 +4,7 @@
     position: relative;
     align-items: center;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 .inputGroup {

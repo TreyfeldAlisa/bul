@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 import cn from "classnames";
 import localFonts from "next/font/local";
@@ -10,6 +10,21 @@ const inter = localFonts({ src: "../../public/fonts/inter/Inter-Bold.ttf" });
 const jet = localFonts({ src: "../../public/fonts/jet-brains-mono/JetBrainsMono-Regular.ttf" });
 
 export default function Home() {
+    useEffect(() => {
+        const contact = document.getElementById("contactButton");
+
+        contact.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            if (document.getElementById("contact")) {
+                document.getElementById("contact").scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
+        });
+    }, []);
+
     return (
         <div className={cn(styles.mainPage)} id="home">
             <div className={cn(styles.textContainer)}>
@@ -38,7 +53,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <Link className={cn(styles.button, inter.className)} href="#contact">
+                <Link className={cn(styles.button, inter.className)} href="#contact" id="contactButton">
                     Contact us
                 </Link>
             </div>
