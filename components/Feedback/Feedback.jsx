@@ -55,25 +55,27 @@ export default function HowWeCan() {
     });
 
     return (
-        <form className={styles.container} id="contact">
-            <div className={styles.inputGroup}>
-                <input
-                    type="text"
-                    className={styles.input}
-                    placeholder="Name"
-                    onChange={truncate}
-                    value={initialValue}
-                />
-                <input type="tel" name="phone" className={styles.input} placeholder="Phone" />
-                <input type="email" name="mail" className={styles.input} placeholder="E-mail" />
-                <textarea
-                    rows="1"
-                    type="text"
-                    className={cn(styles.input, styles.description)}
-                    placeholder="Description task"
-                />
-            </div>
-            <button className={cn(inter.className, styles.button)}>Send</button>
-        </form>
+        <>
+            <form className={styles.container} id="contact">
+                <div className={styles.inputGroup}>
+                    <input
+                        type="text"
+                        className={styles.input}
+                        placeholder="Name"
+                        onChange={truncate}
+                        value={initialValue}
+                    />
+                    <input type="tel" name="phone" className={styles.input} placeholder="Phone" />
+                    <input type="email" name="mail" className={styles.input} placeholder="E-mail" />
+                    <textarea
+                        rows="1"
+                        type="text"
+                        className={cn(styles.input, styles.description)}
+                        placeholder="Description task"
+                    />
+                </div>
+                <button className={cn(inter.className, styles.button)}>Send</button>
+            </form>
+        </>
     );
 }

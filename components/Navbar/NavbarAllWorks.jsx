@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import localFonts from "next/font/local";
 import cn from "classnames";
-import logo from "../../public/image/logo-header.png";
+import logo from "../../public/image/bul-blue.png";
 
 import styles from "./NavbarAllWorks.module.css";
 

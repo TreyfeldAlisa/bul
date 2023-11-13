@@ -14,7 +14,7 @@ export default function Background(shape) {
                     muted
                     loop
                     disablePictureInPicture
-                    webkit-playsinline
+                    webkit-playsinline="true"
                     playsInline
                     pip="false"
                     className={cn(styles.video, "embed-responsive-item")}
