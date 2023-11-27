@@ -1,6 +1,5 @@
 .container {
     height: 100%;
-
     display: flex;
     flex-direction: column;
     position: relative;
@@ -9,7 +8,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 156px;
     padding-bottom: 200px;
 }
 
@@ -93,10 +91,10 @@
 
 @media screen and (max-width: 900px) {
     .container {
-        margin-top: 200px;
-        width: unset;
+        margin-top: 120px;
+        width: 100%;
         left: unset;
-        padding: unset;
+        padding: 0;
         overflow: hidden;
     }
 
@@ -111,9 +109,9 @@
     }
 
     .imageBlockLeft {
-        margin-left: unset;
         flex-direction: column;
         margin-top: 50px;
+        margin-left:50px;
         gap: 40px;
         width: 100%;
     }
@@ -128,9 +126,7 @@
     }
 
     .button {
-        margin: 0 auto;
         margin-top: 50px;
-        width: 100%;
         width: 95%;
         height: 7vh;
 
@@ -138,28 +134,21 @@
     }
 
     .howContainer {
-        width: unset;
         padding: 7rem 0;
     }
-
-    .imageBlockRight {
-        width: unset;
-        padding-left: unset;
-        align-items: flex-end;
-    }
 }
 
-@media screen and (max-width: 340px) {
+/* @media screen and (max-width: 340px) {
     .button {
         width: 100%;
-        padding: 1.75rem 2rem;
+        padding: unset;
     }
 
-        .container {
-                padding: 0 110px;
-                    padding-bottom: unset;
-        }
-}
+    .container {
+        padding: 0 150px;
+        padding-bottom: unset;
+    }
+} */
 
 @media screen and (min-width: 901px) and (max-width: 1100px) {
     .imageBlockLeft {
@@ -180,7 +169,6 @@
         margin-left: 0;
         width: unset;
         padding-left: unset;
-        align-items: flex-end;
     }
 
     .container {
