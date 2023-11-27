@@ -386,8 +386,11 @@
     .container {
         left: 0;
         width: 100%;
+        height: unset;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
         position: unset;
-        margin-top: -2rem;
         align-items: flex-start;
     }
 
@@ -537,7 +540,7 @@
     }
 
     .myImgContainer {
-        margin-top: 200px;
+        margin-top: 120px;
     }
 }
 

@@ -139,7 +139,7 @@
 
     .howContainer {
         width: unset;
-        padding: 12rem 0;
+        padding: 7rem 0;
     }
 
     .imageBlockRight {
@@ -154,6 +154,11 @@
         width: 100%;
         padding: 1.75rem 2rem;
     }
+
+        .container {
+                padding: 0 110px;
+                    padding-bottom: unset;
+        }
 }
 
 @media screen and (min-width: 901px) and (max-width: 1100px) {
