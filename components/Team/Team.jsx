@@ -23,6 +23,7 @@ export default function Team() {
     }
 
     function show() {
+        document.getElementById("team2").className = "team2";
         setClassList(styles.show);
         setShowButton(false);
     }
@@ -62,7 +63,7 @@ export default function Team() {
                 </div>
             </div>
 
-            <div className={classList}>
+            <div className={classList} id="team2">
                 <div className={styles.imageBlockLeft}>
                     <TeamCard
                         name="Konstantin Konstantinopolsky"

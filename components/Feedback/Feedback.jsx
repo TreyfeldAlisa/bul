@@ -68,7 +68,7 @@ export default function HowWeCan() {
                     <input type="tel" name="phone" className={styles.input} placeholder="Phone" />
                     <input type="email" name="mail" className={styles.input} placeholder="E-mail" />
                     <textarea
-                        rows="1"
+                        rows="2"
                         type="text"
                         className={cn(styles.input, styles.description)}
                         placeholder="Description task"

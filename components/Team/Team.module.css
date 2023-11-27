@@ -12,13 +12,14 @@
 }
 
 .hidden {
-    display: none;
+display: none;
 }
 
 .show {
     display: flex;
     flex-direction: column;
     padding-top: 5rem;
+
 }
 
 .imageBlockRight {
@@ -89,6 +90,16 @@
     padding: 400px 0;
 }
 
+@keyframes margin {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(100%);
+    }
+}
+
 @media screen and (max-width: 900px) {
     .container {
         margin-top: 120px;
@@ -111,7 +122,7 @@
     .imageBlockLeft {
         flex-direction: column;
         margin-top: 50px;
-        margin-left:50px;
+        margin-left: 50px;
         gap: 40px;
         width: 100%;
     }
