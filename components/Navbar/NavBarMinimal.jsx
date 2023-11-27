@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./NavBarMinimal.module.css";
 import logo from "../../public/image/bul-blue.png";
@@ -11,10 +11,81 @@ const inter = localFonts({ src: "../../public/fonts/inter/Inter-Bold.ttf" });
 
 const NavBarMinimal = () => {
     const [open, setOpen] = useState(false);
+
+    useEffect(() => {
+        console.log(open)
+        if (open) {
+            const contact = document.getElementById("contactLink");
+            const home = document.getElementById("homeLink");
+            const team = document.getElementById("teamLink");
+            const services = document.getElementById("servicesLink");
+            const about = document.getElementById("aboutLink");
+
+            console.log(contact, home, team, services, about);
+
+            contact.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                if (document.getElementById("contact")) {
+                    document.getElementById("contact").scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            });
+
+            home.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                if (document.getElementById("home")) {
+                    document.getElementById("home").scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            });
+
+            team.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                if (document.getElementById("team")) {
+                    document.getElementById("team").scrollIntoView({
+                        behavior: "smooth",
+                    });
+                }
+            });
+
+            services.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                if (document.getElementById("services")) {
+                    document.getElementById("services").scrollIntoView({
+                        behavior: "smooth",
+                    });
+                }
+            });
+
+            about.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                document.getElementById("about").scrollIntoView({
+                    behavior: "smooth",
+                });
+            });
+        }
+    }, [open]);
+
     return (
-        <div className={cn(interReg.className, styles.navMinimal)}>
+        <div className={cn(interReg.className, styles.navMinimal)} id="navbar">
             <Link href="/" className={styles.logo}>
-                <img alt="logo" src={logo} className={styles.logo} width={60} height={40} />
+                <img
+                    alt="logo"
+                    src={logo}
+                    className={styles.logo}
+                    width={60}
+                    height={40}
+                    id="homeLink"
+                />
             </Link>
             <button type="button" onClick={() => setOpen(!open)}>
                 <svg
@@ -52,12 +123,23 @@ const NavBarMinimal = () => {
             </button>
             {open && (
                 <div className={styles.linkContainer}>
-                    {links.map(({ href, name }) => (
-                        <Link href={href} className={styles.link} onClick={() => setOpen(false)}>
+                    {links.map(({ href, name, id }) => (
+                        <Link
+                            href={href}
+                            className={styles.link}
+                            id={id}
+                            onClick={() => setOpen(false)}
+                            key={name}
+                        >
                             {name}
                         </Link>
                     ))}
-                    <Link className={cn(inter.className, styles.button)} href="#contact">
+                    <Link
+                        className={cn(inter.className, styles.button)}
+                        href="#contact"
+                        id="contactLink"
+                        onClick={() => setOpen(false)}
+                    >
                         Contact us
                     </Link>
                 </div>

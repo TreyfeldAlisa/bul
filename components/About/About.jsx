@@ -23,7 +23,8 @@ export default function About() {
                     </div>
                     <div className={cn(inter.className, styles.bul)}>blue underlined link</div>
                 </div>
-                <div className={cn(inter.className, styles.h1)} id="trigger">
+                <p id="trigger"></p>
+                <div className={cn(inter.className, styles.h1)}>
                     helps <br /> companies
                 </div>
                 <div className={cn(inter.className, styles.textContainer)}>
@@ -98,7 +99,10 @@ export default function About() {
             </div>
 
             <div className={styles.buttonContainer}>
-                <button className={cn(styles.button, inter.className)} onClick={() => Router.push("/allworks")}>
+                <button
+                    className={cn(styles.button, inter.className)}
+                    onClick={() => Router.push("/allworks")}
+                >
                     View all our works
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
