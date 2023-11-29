@@ -17,13 +17,18 @@
     letter-spacing: -0.48rem;
 
     margin-top: 20px;
-    margin-right: 2vw;
+    margin-left: 1rem;
 
     color: #dadfe5;
 }
 
 .h1Color {
     color: #0067f4;
+}
+
+.subtractGreenPink {
+    margin-left: 6rem;
+    margin-top: 1rem;
 }
 
 .textContainer {
@@ -45,6 +50,7 @@
     letter-spacing: -0.12rem;
 
     text-align: left;
+    margin-left: 2rem;
 }
 
 .substract {
@@ -102,8 +108,8 @@
 }
 
 .substractContainerPink {
-    margin-left: -12rem;
-    margin-top: -2rem;
+    margin-left: -14rem;
+    margin-top: -3rem;
     width: 20rem;
 }
 

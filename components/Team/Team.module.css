@@ -12,14 +12,13 @@
 }
 
 .hidden {
-display: none;
+    display: none;
 }
 
 .show {
     display: flex;
     flex-direction: column;
     padding-top: 5rem;
-
 }
 
 .imageBlockRight {
