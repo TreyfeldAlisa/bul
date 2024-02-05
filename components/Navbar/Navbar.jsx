@@ -18,7 +18,6 @@ export default function Navbar() {
             if (typeof window !== undefined) {
                 const ScrollMagic = (await import("scrollmagic")).default;
                 const controller = new ScrollMagic.Controller();
-
                 new ScrollMagic.Scene({
                     triggerElement: "#trigger",
                     duration: 30000, // the scene should last for a scroll distance of 100px
@@ -26,19 +25,19 @@ export default function Navbar() {
                 })
                     .on("enter", function (e) {
                         console.log("enter");
-                        setClassList(styles.fixed);
+                        setClassList((prevClassList) => styles.fixed);
                         console.clear();
                     })
                     .on("leave", function (e) {
                         console.log("leave");
-                        setClassList(styles.nav);
+                        setClassList((prevClassList) => styles.nav);
                         console.clear();
                     })
                     .addTo(controller);
             }
         };
         load();
-    });
+    }, []);
 
     useEffect(() => {
         const contact = document.getElementById("contactLink");
