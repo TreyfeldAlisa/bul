@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import debounce from "lodash.debounce";
 import Link from "next/link";
 import localFonts from "next/font/local";
 import cn from "classnames";
@@ -6,12 +7,19 @@ import logo from "../../public/image/bul-blue.png";
 
 import styles from "./Navbar.module.css";
 import { links } from "../linksMock";
-import { abort } from "process";
 
 const inter = localFonts({ src: "../../public/fonts/inter/Inter-Bold.ttf" });
 
 export default function Navbar() {
     const [classList, setClassList] = useState(styles.nav);
+
+    const debouncedSetClassList = debounce((progress) => {
+        if (progress > 0.26) {
+            setClassList(styles.fixed);
+        } else if (progress < 0.24) {
+            setClassList(styles.nav);
+        }
+    }, 10);
 
     useEffect(() => {
         const load = async () => {
@@ -19,25 +27,17 @@ export default function Navbar() {
                 const ScrollMagic = (await import("scrollmagic")).default;
                 const controller = new ScrollMagic.Controller();
                 new ScrollMagic.Scene({
-                    triggerElement: "#trigger",
-                    duration: 30000, // the scene should last for a scroll distance of 100px
-                    offset: 150, // start this scene after scrolling for 50px
+                    duration: 3000,
+                    offset: 150,
                 })
-                    .on("enter", function (e) {
-                        console.log("enter");
-                        setClassList((prevClassList) => styles.fixed);
-                        console.clear();
-                    })
-                    .on("leave", function (e) {
-                        console.log("leave");
-                        setClassList((prevClassList) => styles.nav);
-                        console.clear();
+                    .on("progress", function (e) {
+                        debouncedSetClassList(e.progress);
                     })
                     .addTo(controller);
             }
         };
         load();
-    }, []);
+    }, [debouncedSetClassList]);
 
     useEffect(() => {
         const contact = document.getElementById("contactLink");

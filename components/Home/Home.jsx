@@ -53,7 +53,11 @@ export default function Home() {
                     </div>
                 </div>
 
-                <Link className={cn(styles.button, inter.className)} href="#contact" id="contactButton">
+                <Link
+                    className={cn(styles.button, inter.className)}
+                    href="#contact"
+                    id="contactButton"
+                >
                     Contact us
                 </Link>
             </div>

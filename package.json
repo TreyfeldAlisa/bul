@@ -22,6 +22,7 @@
     "gltf-pipeline": "^4.1.0",
     "gltfjsx": "6.1.4",
     "lodash-es": "^4.17.21",
+    "lodash.debounce": "^4.0.8",
     "next": "13.3.0",
     "next-absolute-url": "^1.2.2",
     "next-images": "^1.8.5",

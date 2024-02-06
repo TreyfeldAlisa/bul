@@ -13,15 +13,12 @@ const NavBarMinimal = () => {
     const [open, setOpen] = useState(false);
 
     useEffect(() => {
-        console.log(open)
         if (open) {
             const contact = document.getElementById("contactLink");
             const home = document.getElementById("homeLink");
             const team = document.getElementById("teamLink");
             const services = document.getElementById("servicesLink");
             const about = document.getElementById("aboutLink");
-
-            console.log(contact, home, team, services, about);
 
             contact.addEventListener("click", function (e) {
                 e.preventDefault();
@@ -76,7 +73,7 @@ const NavBarMinimal = () => {
     }, [open]);
 
     return (
-        <div className={cn(interReg.className, styles.navMinimal)} id="navbar">
+        <div className={cn(interReg.className, styles.navMinimal)} id="nav">
             <Link href="/" className={styles.logo}>
                 <img
                     alt="logo"
